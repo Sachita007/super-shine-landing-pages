@@ -1,23 +1,18 @@
-// Logo-branded prototype D: black, lilac, and silver with a full-width photographic hero.
+// Logo-branded prototype D: offer-first hero in black, lilac, and silver.
 window.VariantD = () => `${UI.header()}
 <main id="main">
   <section class="noir-hero" aria-labelledby="noir-title">
     <div class="noir-stage">
       <img class="noir-hero-photo" src="assets/corvette.webp" alt="Silver Corvette with a deeply reflective finish in a detailing studio" width="1142" height="1324" fetchpriority="high">
       <div class="noir-hero-copy container">
-        <span class="eyebrow">STOCKTON, CALIFORNIA <span aria-hidden="true">/</span> CERAMIC COATING SPECIALISTS</span>
-        <h1 id="noir-title">Obsess over<br><em>the finish.</em></h1>
-        <p>Deep gloss. Serious protection.<br>Give your paint the Super Shine treatment.</p>
+        <span class="eyebrow">LIMITED-TIME OFFER <span aria-hidden="true">/</span> STOCKTON, CA</span>
+        <h1 id="noir-title">10-year premium<br>ceramic coating.</h1>
+        <p>Deep gloss. Everyday protection.<br>A finish you'll love, at a price you will too.</p>
+        <div class="noir-price"><strong>$599</strong><div><span>Normally <s>$1,200</s></span><small>YOU SAVE $601</small></div></div>
+        <div class="noir-warranty"><span aria-hidden="true">✓</span><strong>Up to a 10-year warranty</strong><span class="noir-warranty-divider" aria-hidden="true">/</span><span>Multi-certified specialists</span></div>
+        <div class="noir-offer-action">${UI.button('Claim my $599 ceramic coating')}<small>Free quote. No pressure. Confirm eligibility & warranty terms with the shop.</small></div>
       </div>
-      <div class="noir-frame-note" aria-hidden="true"><span>PRECISION IN EVERY REFLECTION</span><span>SUPER SHINE / CA</span></div>
-    </div>
-    <div class="noir-offer">
-      <div class="container noir-offer-grid">
-        <div class="noir-offer-title"><span class="eyebrow">THE LIMITED-TIME OFFER</span><strong>Premium 10-year<br> ceramic coating</strong></div>
-        <div class="noir-price"><strong>$599</strong><span><s>$1,200</s><small>Save $601</small></span></div>
-        <div class="noir-warranty"><span>UP TO</span><strong>10-year</strong><span>WARRANTY</span></div>
-        <div class="noir-offer-action">${UI.button('Claim the $599 offer')}<small>Confirm eligibility & warranty terms with the shop.</small></div>
-      </div>
+      <div class="noir-frame-note"><span>THE SUPER SHINE FINISH</span><a href="#portfolio">See our work ↗</a></div>
     </div>
   </section>
   <div class="noir-proof container" aria-label="Super Shine at a glance"><div><strong>4.9 <span aria-hidden="true">★★★★★</span></strong><span>Google rating</span></div><div><strong>100+</strong><span>Satisfied customers</span></div><div><strong>Stockton, CA</strong><span>Your local detailing specialists</span></div></div>
