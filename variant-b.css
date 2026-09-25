@@ -26,24 +26,25 @@ body.variant-b .desktop-nav { font-size: 11px; letter-spacing: .025em; }
 body.variant-b .header-call { border: 1px solid var(--accent); border-radius: 0; background: transparent; color: var(--accent); padding: 12px 17px; font-size: 11px; }
 body.variant-b .b-hero { padding-top: 25px; }
 body.variant-b .b-hero-kicker { display: flex; justify-content: space-between; gap: 16px; text-transform: uppercase; letter-spacing: .19em; font-size: 8px; color: var(--muted); }
-body.variant-b .b-hero-layout { display: grid; grid-template-columns: 1.08fr 1fr; gap: 66px; align-items: center; padding: 53px 0 37px; }
-body.variant-b .b-hero-copy > .eyebrow { margin: 0 0 22px; }
-body.variant-b .b-hero h1 { margin: 0; font-size: clamp(66px, 7.3vw, 104px); line-height: .96; font-weight: 500; letter-spacing: -.05em; }
+body.variant-b .b-hero-layout { display: grid; grid-template-columns: 1.08fr 1fr; gap: 66px; align-items: center; padding: 32px 0 30px; }
+body.variant-b .b-hero-copy > .eyebrow { margin: 0 0 13px; }
+body.variant-b .b-hero h1 { margin: 0; font-size: clamp(40px, 4.1vw, 58px); line-height: 1.02; font-weight: 500; letter-spacing: -.035em; }
 body.variant-b .b-hero h1 em { font-weight: 400; }
-body.variant-b .b-hero-description { max-width: 370px; margin: 26px 0 31px; color: var(--muted); font-size: 12px; line-height: 1.9; }
-body.variant-b .b-hero-offer { border-top: 1px solid var(--line); max-width: 365px; padding-top: 20px; }
-body.variant-b .b-offer-label { margin: 0 0 6px; font-size: 9px; text-transform: uppercase; letter-spacing: .14em; }
-body.variant-b .b-price { display: flex; align-items: center; gap: 21px; margin: 0 0 17px; }
-body.variant-b .b-price > strong { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 67px; line-height: 1.1; font-weight: 500; letter-spacing: -.05em; }
-body.variant-b .b-price > div { display: grid; gap: 6px; color: var(--muted); font-size: 10px; }
-body.variant-b .b-hero-offer .button { min-width: 239px; justify-content: space-between; }
-body.variant-b .b-hero-rating { display: flex; align-items: center; gap: 15px; margin-top: 29px; }
+body.variant-b .b-hero-description { max-width: 370px; margin: 18px 0 0; color: var(--muted); font-size: 12px; line-height: 1.8; }
+body.variant-b .b-hero-offer { max-width: 390px; margin-top: 17px; }
+body.variant-b .b-price { margin: 0 0 20px; }
+body.variant-b .b-price > strong { display: block; font-family: 'Cormorant Garamond', Georgia, serif; font-size: clamp(110px, 10vw, 140px); line-height: .95; font-weight: 500; letter-spacing: -.055em; }
+body.variant-b .b-price > div { display: flex; align-items: center; gap: 18px; margin-top: 12px; color: var(--muted); font-size: 13px; }
+body.variant-b .b-saving { color: var(--accent); font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; }
+body.variant-b .b-hero-offer .button { width: 100%; justify-content: space-between; }
+body.variant-b .b-hero-warranty { margin: 11px 0 0; color: var(--muted); font-size: 11px; line-height: 1.6; }
+body.variant-b .b-hero-rating { display: flex; align-items: center; gap: 15px; margin-top: 18px; }
 body.variant-b .b-hero-rating > strong { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 29px; font-weight: 500; }
 body.variant-b .b-hero-rating > strong span { font-family: Georgia, serif; font-size: 17px; }
 body.variant-b .b-hero-rating > div { border-left: 1px solid var(--line); padding-left: 15px; font-size: 9px; line-height: 1.8; }
 body.variant-b .b-hero-rating > div span { display: block; color: var(--muted); }
 body.variant-b .b-hero-photo { margin: 0; align-self: stretch; padding-top: 7px; display: flex; flex-direction: column; }
-body.variant-b .b-photo-frame { position: relative; flex: 1; min-height: 560px; }
+body.variant-b .b-photo-frame { position: relative; flex: 1; min-height: 480px; }
 body.variant-b .b-photo-frame > img { width: 100%; height: 100%; position: absolute; inset: 0; object-fit: cover; object-position: 53% center; }
 body.variant-b .b-warranty { position: absolute; width: 147px; height: 147px; bottom: 28px; left: -37px; background: #f1efe5; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-direction: column; color: var(--accent); outline: 1px solid #c1c5b7; outline-offset: -9px; text-align: center; }
 body.variant-b .b-warranty > span { font-size: 8px; text-transform: uppercase; letter-spacing: .13em; }
@@ -120,8 +121,8 @@ body.variant-b .site-footer small { color: #c4cec1; }
 body.variant-b .site-footer h3 { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 25px; }
 @media (max-width: 1000px) {
   body.variant-b .b-hero-layout { gap: 40px; }
-  body.variant-b .b-hero h1 { font-size: 76px; }
-  body.variant-b .b-photo-frame { min-height: 535px; }
+  body.variant-b .b-hero h1 { font-size: 43px; }
+  body.variant-b .b-photo-frame { min-height: 480px; }
   body.variant-b #benefits { gap: 40px; }
   body.variant-b .b-editorial { gap: 40px; }
   body.variant-b .portfolio-grid { column-gap: 40px; }
@@ -132,15 +133,17 @@ body.variant-b .site-footer h3 { font-family: 'Cormorant Garamond', Georgia, ser
   body.variant-b .site-header { min-height: 82px; }
   body.variant-b .brand img { width: 39px; height: 39px; }
   body.variant-b .header-call { padding: 10px 12px; font-size: 10px; }
-  body.variant-b .b-hero { padding-top: 20px; }
-  body.variant-b .b-hero-kicker { font-size: 7px; letter-spacing: .1em; }
-  body.variant-b .b-hero-layout { grid-template-columns: 1fr; gap: 33px; padding-top: 37px; padding-bottom: 24px; }
-  body.variant-b .b-hero h1 { font-size: clamp(63px, 16vw, 92px); }
-  body.variant-b .b-hero-description { max-width: 370px; margin: 23px 0; font-size: 12px; }
-  body.variant-b .b-hero-offer { max-width: none; }
-  body.variant-b .b-hero-offer .button { width: 100%; }
-  body.variant-b .b-price { gap: 24px; }
-  body.variant-b .b-hero-rating { margin-top: 22px; }
+  body.variant-b .b-hero { padding-top: 12px; }
+  body.variant-b .b-hero-kicker { font-size: 7px; letter-spacing: .06em; gap: 10px; }
+  body.variant-b .b-hero-layout { grid-template-columns: 1fr; gap: 27px; padding-top: 20px; padding-bottom: 24px; }
+  body.variant-b .b-hero-copy > .eyebrow { margin-bottom: 10px; font-size: 9px; }
+  body.variant-b .b-hero h1 { font-size: clamp(34px, 9.2vw, 48px); }
+  body.variant-b .b-hero-description { max-width: 370px; margin: 14px 0 0; font-size: 11px; }
+  body.variant-b .b-hero-offer { max-width: none; margin-top: 12px; }
+  body.variant-b .b-price { margin-bottom: 15px; }
+  body.variant-b .b-price > strong { font-size: clamp(96px, 26vw, 125px); }
+  body.variant-b .b-price > div { margin-top: 8px; font-size: 12px; }
+  body.variant-b .b-hero-rating { margin-top: 15px; }
   body.variant-b .b-photo-frame { min-height: 410px; }
   body.variant-b .b-photo-frame > img { object-position: center 57%; }
   body.variant-b .b-warranty { width: 125px; height: 125px; bottom: 22px; left: -12px; }

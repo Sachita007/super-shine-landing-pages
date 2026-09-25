@@ -27,24 +27,17 @@ body.variant-c .c-kicker { display: flex; align-items: center; gap: 28px; paddin
 body.variant-c .c-kicker > span:first-child { display: flex; align-items: center; gap: 9px; }
 body.variant-c .c-kicker > span:first-child::before { content: ''; width: 7px; height: 7px; background: var(--text); border-radius: 50%; }
 body.variant-c .c-stripes { width: 90px; height: 16px; margin-left: auto; background: repeating-linear-gradient(115deg, transparent 0 9px, var(--text) 9px 16px); }
-body.variant-c .c-headline { display: grid; grid-template-columns: 1fr 250px; align-items: end; gap: 34px; padding: 28px 0 35px; }
-body.variant-c .c-headline h1 { font-size: clamp(76px, 8.2vw, 118px); line-height: .84; letter-spacing: -.025em; margin: 0; }
-body.variant-c .c-headline h1 span { color: var(--text); }
-body.variant-c .c-small-label { display: block; text-transform: uppercase; font-size: 10px; letter-spacing: .1em; font-weight: 800; }
-body.variant-c .c-hero-intro p { margin: 12px 0 20px; font-size: 13px; line-height: 1.75; color: var(--muted); }
-body.variant-c .c-text-link { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--text); padding: 0 0 8px; font-size: 11px; text-transform: uppercase; font-weight: 800; text-decoration: none; }
-body.variant-c .c-text-link span { font-size: 22px; }
-body.variant-c .c-hero-stage { display: grid; grid-template-columns: 1.75fr 1fr; border: 1px solid var(--text); }
+body.variant-c .c-hero-stage { display: grid; grid-template-columns: 1fr 1.2fr; border: 1px solid var(--text); margin-top: 22px; }
 body.variant-c .c-hero-photo { position: relative; min-width: 0; margin: 0; min-height: 480px; background: #252d2d; overflow: hidden; }
 body.variant-c .c-hero-photo::after { content: ''; position: absolute; inset: 55% 0 0; background: linear-gradient(transparent, #0009); pointer-events: none; }
 body.variant-c .c-hero-photo img { position: absolute; width: 100%; height: 100%; object-fit: cover; object-position: 50% 61%; }
 body.variant-c .c-hero-photo figcaption { position: absolute; z-index: 1; bottom: 22px; left: 24px; right: 24px; display: flex; gap: 20px; justify-content: space-between; color: #fff; font-size: 9px; font-weight: 700; text-transform: uppercase; letter-spacing: .09em; }
-body.variant-c .c-offer { background: var(--accent); padding: 26px 30px 20px; border-left: 1px solid var(--text); }
+body.variant-c .c-offer { background: var(--accent); padding: 27px 34px 24px; border-right: 1px solid var(--text); }
 body.variant-c .c-offer-top { display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #17191660; padding-bottom: 12px; text-transform: uppercase; font-size: 10px; font-weight: 800; letter-spacing: .08em; }
 body.variant-c .c-offer-top > span:last-child { font-size: 24px; line-height: 1; }
-body.variant-c .c-offer h2 { margin: 18px 0 4px; font-size: 27px; line-height: .98; letter-spacing: .005em; }
-body.variant-c .c-price { display: flex; align-items: flex-start; font-family: 'Barlow Condensed', Impact, sans-serif; font-size: 143px; font-weight: 700; line-height: .95; letter-spacing: -.05em; }
-body.variant-c .c-currency { padding-top: 14px; padding-right: 5px; font-size: 56px; }
+body.variant-c .c-offer h1 { margin: 17px 0 9px; font-size: 43px; line-height: .98; letter-spacing: -.015em; }
+body.variant-c .c-price { display: flex; align-items: flex-start; font-family: 'Barlow Condensed', Impact, sans-serif; font-size: 190px; font-weight: 700; line-height: .85; letter-spacing: -.05em; }
+body.variant-c .c-currency { padding-top: 14px; padding-right: 5px; font-size: 64px; }
 body.variant-c .c-normal { display: flex; gap: 7px; align-items: center; margin: 10px 0 18px; font-size: 11px; }
 body.variant-c .c-normal strong { margin-left: auto; padding: 4px 7px; color: var(--accent); background: var(--text); font-size: 10px; }
 body.variant-c .c-warranty { display: flex; align-items: center; gap: 11px; padding: 12px 0; border-top: 1px solid #17191660; font-size: 11px; line-height: 1.5; }
@@ -121,11 +114,9 @@ body.variant-c a:focus-visible,
 body.variant-c button:focus-visible,
 body.variant-c summary:focus-visible { outline: 3px solid #677600; outline-offset: 5px; }
 @media (max-width: 1000px) {
-  body.variant-c .c-headline { grid-template-columns: 1fr 210px; gap: 20px; }
-  body.variant-c .c-headline h1 { font-size: 84px; }
-  body.variant-c .c-hero-stage { grid-template-columns: 1.4fr 1fr; }
+  body.variant-c .c-hero-stage { grid-template-columns: 1fr 1fr; }
   body.variant-c .c-offer { padding: 23px; }
-  body.variant-c .c-price { font-size: 124px; }
+  body.variant-c .c-price { font-size: 165px; }
   body.variant-c .c-hero-photo figcaption { flex-direction: column; gap: 7px; }
   body.variant-c .quote-layout { gap: 35px; }
   body.variant-c .c-trust p { padding: 0 15px; }
@@ -139,19 +130,17 @@ body.variant-c summary:focus-visible { outline: 3px solid #677600; outline-offse
   body.variant-c .c-kicker { padding-top: 18px; gap: 12px; font-size: 8px; letter-spacing: .03em; }
   body.variant-c .c-kicker > span:first-child { gap: 5px; }
   body.variant-c .c-stripes { display: none; }
-  body.variant-c .c-headline { grid-template-columns: 1fr; gap: 22px; padding: 27px 0; }
-  body.variant-c .c-headline h1 { font-size: clamp(62px, 14.5vw, 95px); }
-  body.variant-c .c-hero-intro { display: grid; grid-template-columns: 1fr; }
-  body.variant-c .c-small-label { display: none; }
-  body.variant-c .c-hero-intro p { margin: 0 0 13px; font-size: 12px; max-width: 420px; }
-  body.variant-c .c-text-link { max-width: 220px; }
-  body.variant-c .c-hero-stage { grid-template-columns: 1fr; }
+  body.variant-c .c-hero-stage { grid-template-columns: 1fr; margin-top: 15px; }
   body.variant-c .c-hero-photo { min-height: 310px; }
   body.variant-c .c-hero-photo img { object-position: 50% 63%; }
   body.variant-c .c-hero-photo figcaption { left: 17px; bottom: 17px; font-size: 8px; }
-  body.variant-c .c-offer { border-left: 0; border-top: 1px solid var(--text); padding: 22px; }
-  body.variant-c .c-offer h2 { font-size: 29px; }
-  body.variant-c .c-price { font-size: 145px; }
+  body.variant-c .c-offer { border-right: 0; border-bottom: 1px solid var(--text); padding: 18px 21px; }
+  body.variant-c .c-offer-top { padding-bottom: 8px; font-size: 9px; }
+  body.variant-c .c-offer h1 { font-size: 31px; margin: 12px 0 8px; }
+  body.variant-c .c-price { font-size: 136px; }
+  body.variant-c .c-currency { font-size: 45px; padding-top: 8px; }
+  body.variant-c .c-normal { margin: 10px 0 12px; }
+  body.variant-c .c-warranty { padding-block: 8px; }
   body.variant-c .c-trust { margin-top: 25px; }
   body.variant-c .c-trust-inner { grid-template-columns: 1fr 1fr; row-gap: 25px; padding-top: 25px; padding-bottom: 25px; }
   body.variant-c .c-trust p { padding: 0 15px 0 0; }

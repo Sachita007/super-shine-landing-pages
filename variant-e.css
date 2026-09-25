@@ -17,20 +17,20 @@ body.variant-e .phone-symbol { border: 0; color: var(--accent); margin-right: 0;
 body.variant-e .button { border-radius: 0; padding: 17px 23px; }
 body.variant-e .signature-edition { display: flex; justify-content: space-between; gap: 20px; padding-block: 22px; font-size: 9px; font-weight: 700; letter-spacing: .16em; }
 body.variant-e .signature-edition > span:last-child { color: var(--muted); }
-body.variant-e .signature-masthead { display: grid; grid-template-columns: minmax(0, 1fr) 280px; gap: 55px; align-items: center; padding: 35px 0 55px; }
-body.variant-e .signature-intro .eyebrow { margin-bottom: 24px; }
-body.variant-e .signature-intro h1 { font-size: clamp(64px, 7.6vw, 106px); font-weight: 700; letter-spacing: -.075em; line-height: 1.01; }
-body.variant-e .signature-intro h1 em { color: var(--accent); font-style: normal; }
-body.variant-e .signature-intro > p { max-width: 440px; margin-top: 29px; font-size: 13px; line-height: 1.9; }
-body.variant-e .signature-ticket { padding: 24px; border: 1px solid #b9afc2; background: linear-gradient(135deg, #faf9fc, #e0dae7 55%, #f8f6fa); box-shadow: 7px 7px 0 #ded9e4; }
-body.variant-e .signature-ticket-label { display: block; color: #5d456c; font-size: 8px; font-weight: 800; letter-spacing: .14em; }
-body.variant-e .signature-ticket h2 { margin-top: 16px; font-size: 24px; font-weight: 600; letter-spacing: -.04em; line-height: 1.15; }
-body.variant-e .signature-price { margin-top: 16px; }
-body.variant-e .signature-price strong { display: block; font-family: 'Barlow Condensed', sans-serif; font-size: 88px; font-weight: 600; line-height: 1; letter-spacing: -.04em; }
-body.variant-e .signature-price > span { display: block; margin-top: 8px; font-size: 11px; color: var(--muted); }
-body.variant-e .signature-saving { display: block; font-size: 9px; font-weight: 800; letter-spacing: .09em; color: var(--accent); margin-top: 13px; }
-body.variant-e .signature-ticket .button { display: flex; margin-top: 22px; gap: 15px; font-size: 11px; }
-body.variant-e .signature-ticket > p { font-size: 9px; line-height: 1.7; margin-top: 13px; }
+body.variant-e .signature-masthead { display: grid; grid-template-columns: minmax(0, 1.65fr) minmax(0, 1fr); gap: 65px; align-items: center; padding: 12px 0 40px; }
+body.variant-e .signature-intro .eyebrow { margin-bottom: 20px; font-size: 8px; }
+body.variant-e .signature-intro .signature-statement { color: var(--text); font-size: clamp(36px, 3.7vw, 50px); font-weight: 600; letter-spacing: -.065em; line-height: 1.1; }
+body.variant-e .signature-statement em { color: var(--accent); font-style: normal; }
+body.variant-e .signature-intro > p:last-child { max-width: 340px; margin-top: 23px; font-size: 13px; line-height: 1.9; }
+body.variant-e .signature-ticket { padding: 30px 38px; border: 1px solid #b9afc2; background: linear-gradient(135deg, #faf9fc, #e0dae7 55%, #f8f6fa); box-shadow: 7px 7px 0 #ded9e4; }
+body.variant-e .signature-ticket-label { display: block; color: #5d456c; font-size: 9px; font-weight: 800; letter-spacing: .14em; }
+body.variant-e .signature-ticket h1 { margin-top: 12px; font-size: 34px; font-weight: 600; letter-spacing: -.04em; line-height: 1.14; }
+body.variant-e .signature-price { display: flex; align-items: baseline; flex-wrap: wrap; gap: 6px 23px; margin-top: 12px; }
+body.variant-e .signature-price strong { display: block; color: var(--accent); font-family: 'Barlow Condensed', sans-serif; font-size: 140px; font-weight: 600; line-height: .95; letter-spacing: -.04em; }
+body.variant-e .signature-price > span { font-size: 13px; color: var(--muted); }
+body.variant-e .signature-saving { display: block; font-size: 11px; font-weight: 800; letter-spacing: .09em; color: var(--accent); margin-top: 8px; }
+body.variant-e .signature-ticket .button { display: flex; max-width: 390px; margin-top: 16px; gap: 15px; font-size: 13px; }
+body.variant-e .signature-ticket > p { font-size: 11px; line-height: 1.6; margin-top: 12px; }
 body.variant-e .signature-photo { background: #211f22; }
 body.variant-e .signature-photo > img { width: 100%; height: clamp(370px, 54vw, 660px); object-position: center 65%; }
 body.variant-e .signature-photo figcaption { display: flex; justify-content: space-between; gap: 20px; padding: 17px 23px; color: #e6deef; background: #171419; font-size: 9px; }
@@ -87,9 +87,8 @@ body.variant-e .footer-grid .eyebrow { color: #c795e9; }
   body.variant-e .site-header .brand > span { font-size: 12px; }
   body.variant-e .desktop-nav { gap: 16px; font-size: 10px; }
   body.variant-e .header-call { font-size: 10px; }
-  body.variant-e .signature-masthead { grid-template-columns: minmax(0, 1fr) 250px; gap: 30px; }
-  body.variant-e .signature-intro h1 { font-size: clamp(57px, 7.3vw, 78px); }
-  body.variant-e .signature-ticket { padding: 21px; }
+  body.variant-e .signature-masthead { gap: 35px; }
+  body.variant-e .signature-ticket { padding: 25px; }
   body.variant-e .signature-proof { grid-template-columns: 1fr 1fr 1.2fr; }
   body.variant-e .signature-proof > div:last-of-type { border-right: 0; }
   body.variant-e .signature-proof > a { grid-column: 1 / -1; justify-self: start; }
@@ -106,27 +105,27 @@ body.variant-e .footer-grid .eyebrow { color: #c795e9; }
   body.variant-e .site-footer .brand { flex-wrap: wrap; }
 }
 @media (max-width: 760px) {
-  body.variant-e .site-header { height: 100px; }
+  body.variant-e .site-header { height: 88px; }
   body.variant-e .site-header .brand img { width: 68px; height: 68px; }
   body.variant-e .site-header .brand > span { font-size: 12px; }
   body.variant-e .site-header .brand small { font-size: 6px; }
   body.variant-e .menu-toggle { border-radius: 0; padding: 9px 11px; }
-  body.variant-e #mobile-menu:not([hidden]) { top: 89px; }
-  body.variant-e .signature-edition { font-size: 8px; padding-block: 19px; }
-  body.variant-e .signature-edition > span:last-child { max-width: 135px; text-align: right; font-size: 7px; }
-  body.variant-e .signature-masthead { grid-template-columns: minmax(0, 1fr); gap: 30px; padding-top: 20px; padding-bottom: 34px; }
-  body.variant-e .signature-intro h1 { font-size: clamp(49px, 9.5vw, 75px); }
-  body.variant-e .signature-intro .eyebrow { font-size: 8px; letter-spacing: .12em; margin-bottom: 19px; }
-  body.variant-e .signature-intro > p { margin-top: 23px; font-size: 12px; max-width: 430px; }
-  body.variant-e .signature-ticket { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 8px 17px; padding: 22px; box-shadow: 5px 5px 0 #ded9e4; }
-  body.variant-e .signature-ticket-label { grid-column: 1 / -1; font-size: 8px; }
-  body.variant-e .signature-ticket h2 { font-size: 22px; margin-top: 10px; align-self: center; }
-  body.variant-e .signature-price { margin-top: 5px; text-align: right; }
-  body.variant-e .signature-price strong { font-size: 67px; }
-  body.variant-e .signature-price > span { font-size: 10px; margin-top: 4px; }
-  body.variant-e .signature-saving { grid-column: 1 / -1; margin-top: 7px; }
-  body.variant-e .signature-ticket .button { grid-column: 1 / -1; margin-top: 8px; }
-  body.variant-e .signature-ticket > p { grid-column: 1 / -1; margin-top: 4px; }
+  body.variant-e #mobile-menu:not([hidden]) { top: 87px; }
+  body.variant-e .signature-edition { font-size: 7px; padding-block: 12px; }
+  body.variant-e .signature-edition > span:last-child { max-width: 135px; text-align: right; font-size: 6px; }
+  body.variant-e .signature-masthead { grid-template-columns: minmax(0, 1fr); gap: 28px; padding-top: 4px; padding-bottom: 28px; }
+  body.variant-e .signature-intro .signature-statement { font-size: 36px; }
+  body.variant-e .signature-intro .eyebrow { font-size: 8px; letter-spacing: .12em; margin-bottom: 12px; }
+  body.variant-e .signature-intro > p:last-child { margin-top: 15px; font-size: 12px; max-width: 430px; }
+  body.variant-e .signature-ticket { padding: 19px; box-shadow: 5px 5px 0 #ded9e4; }
+  body.variant-e .signature-ticket-label { font-size: 8px; letter-spacing: .11em; }
+  body.variant-e .signature-ticket h1 { font-size: 27px; margin-top: 10px; }
+  body.variant-e .signature-price { display: block; margin-top: 10px; }
+  body.variant-e .signature-price strong { font-size: 104px; }
+  body.variant-e .signature-price > span { display: block; font-size: 11px; margin-top: 2px; }
+  body.variant-e .signature-saving { margin-top: 5px; }
+  body.variant-e .signature-ticket .button { max-width: none; margin-top: 12px; font-size: 12px; }
+  body.variant-e .signature-ticket > p { margin-top: 10px; font-size: 10px; }
   body.variant-e .signature-ticket > p br { display: none; }
   body.variant-e .signature-photo > img { height: 370px; object-position: center 65%; }
   body.variant-e .signature-photo figcaption { padding: 16px; font-size: 8px; }

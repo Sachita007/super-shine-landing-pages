@@ -8,14 +8,14 @@ window.VariantB = () => {
       <div class="b-hero-kicker"><span>Exceptional care. Everyday pride.</span><span>Stockton, California</span></div>
       <div class="b-hero-layout">
         <div class="b-hero-copy">
-          <p class="eyebrow">Premium ceramic coating</p>
-          <h1 id="b-hero-title">For the love<br>of your <em>car.</em></h1>
-          <p class="b-hero-description">That just-detailed feeling, made to last. Richer gloss, effortless upkeep, and a little more peace of mind on every drive.</p>
+          <p class="eyebrow">A limited-time invitation</p>
+          <h1 id="b-hero-title">Premium 10-year<br><em>ceramic coating.</em></h1>
           <div class="b-hero-offer">
-            <p class="b-offer-label">Your next chapter in car care</p>
-            <div class="b-price"><strong>$599</strong><div><span>Normally <s>$1,200</s></span><span>Limited-time offer</span></div></div>
-            ${button('Give your car the best')}
+            <div class="b-price"><strong>$599</strong><div><span>Normally <s>$1,200</s></span><span class="b-saving">Save $601</span></div></div>
+            ${button('Claim the $599 offer', '#quote')}
+            <p class="b-hero-warranty">Up to 10-year warranty available. Ask about coverage and care requirements.</p>
           </div>
+          <p class="b-hero-description">For the love of your car. Richer gloss, effortless upkeep, and that just-detailed feeling, made to last.</p>
           <div class="b-hero-rating"><strong>4.9<span aria-hidden="true"> ★</span></strong><div>Google rating<span>100+ satisfied customers</span></div></div>
         </div>
         <figure class="b-hero-photo">
