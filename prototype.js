@@ -25,7 +25,7 @@ function VariantA() {
     ${why()}${portfolio()}${quote()}${faq()}
   </main>${footer()}`;
 }
-const variants = {A: {name: 'Midnight Studio', render: VariantA}, B: {name: 'The Atelier', render: window.VariantB}, C: {name: 'Performance', render: window.VariantC}, D: {name: 'Purple Noir', render: window.VariantD}, E: {name: 'Silver Signature', render: window.VariantE}};
+const variants = {A: {name: 'Midnight Studio', render: VariantA}, B: {name: 'The Atelier', render: window.VariantB}, C: {name: 'Performance', render: window.VariantC}, D: {name: 'Purple Noir', render: window.VariantD}, E: {name: 'Silver Signature', render: window.VariantE}, F: {name: 'Daylight Studio', render: window.VariantF}};
 const keys = Object.keys(variants);
 let current;
 const quoteDialog = document.getElementById('quote-dialog');
@@ -41,9 +41,12 @@ function renderVariant(key, updateUrl = false) {
   }
   document.body.className = `variant-${current.toLowerCase()}`;
   document.getElementById('app').innerHTML = variants[current].render();
-  const modalForm = document.querySelector('#quote .quote-form').cloneNode(true);
-  modalForm.querySelector('input').autofocus = true;
-  quoteDialog.querySelector('.dialog-form').replaceChildren(modalForm);
+  const quoteForm = document.querySelector('#quote .quote-form').cloneNode(true);
+  const inlineQuote = document.getElementById('hero-quote');
+  const dialogForm = quoteDialog.querySelector('.dialog-form');
+  dialogForm.replaceChildren();
+  quoteForm.querySelector('input').autofocus = !inlineQuote;
+  (inlineQuote || dialogForm).append(quoteForm);
   document.getElementById('variant-label').textContent = `${current} — ${variants[current].name}`;
   document.title = `${variants[current].name} | Super Shine Auto Detailing`;
   document.querySelectorAll('.variant-dots a').forEach(a => {
@@ -71,8 +74,14 @@ document.addEventListener('click', event => {
   const trigger = event.target.closest('a[href="#quote"]');
   if (trigger && !event.ctrlKey && !event.metaKey && !event.shiftKey && !event.altKey) {
     event.preventDefault();
-    quoteTrigger = trigger.closest('#mobile-menu') ? document.querySelector('.menu-toggle') : trigger;
-    quoteDialog.showModal();
+    const inlineQuote = document.getElementById('hero-quote');
+    if (inlineQuote) {
+      inlineQuote.closest('.daylight-card').scrollIntoView({block: 'start'});
+      inlineQuote.querySelector('input').focus({preventScroll: true});
+    } else {
+      quoteTrigger = trigger.closest('#mobile-menu') ? document.querySelector('.menu-toggle') : trigger;
+      quoteDialog.showModal();
+    }
   }
 });
 quoteDialog.querySelector('.dialog-close').addEventListener('click', () => quoteDialog.close());
