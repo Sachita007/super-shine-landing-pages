@@ -6,6 +6,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Explore six Super Shine Auto Detailing ceramic coating landing page prototypes.">
   <meta name="robots" content="noindex, nofollow">
+  <script data-daylight-redirect>
+    // Preserve previously shared Variant F URLs; its canonical page is pre-rendered.
+    if (new URLSearchParams(location.search).get('variant') === 'F') {
+      location.replace(new URL(`daylight.html${location.search}${location.hash}`, location.href).href);
+    }
+  </script>
+  <script>
+    // Register before forms load; thank-you routing must not wait for page-building scripts.
+    // GHL sends this only after success. The iframe sandbox prevents its separate top-level redirect.
+    window.addEventListener('message', event => {
+      if (event.origin !== 'https://api.leadconnectorhq.com' || !Array.isArray(event.data)) return;
+      const frame = [...document.querySelectorAll('iframe.ghl-form-frame')].find(frame => event.source === frame.contentWindow);
+      if (!frame) return;
+      const [action, storageKey, frameId, locationId, fingerprint] = event.data;
+      if (action !== 'set-sticky-contacts' || locationId !== '60EP3VXxgFgxW4TtU50H' ||
+          frameId !== frame.id || storageKey !== `embedded_iframe_${frameId}` ||
+          typeof fingerprint !== 'string' || !fingerprint) return;
+      window.location.assign(new URL('thank-you.html', window.location.href).href);
+    });
+  </script>
   <title>Super Shine Auto Detailing | Ceramic Coating Prototypes</title>
   <link rel="icon" href="assets/logo.webp">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,8 +45,7 @@
   <script src="variant-c.js?v=offer-3" defer></script>
   <script src="variant-d.js?v=offer-3" defer></script>
   <script src="variant-e.js?v=offer-3" defer></script>
-  <script src="variant-f.js?v=daylight-9" defer></script>
-  <script src="prototype.js?v=daylight-9" defer></script>
+  <script src="prototype.js?v=daylight-10" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -43,7 +62,7 @@
   <nav class="prototype-switcher" aria-label="Prototype designs">
     <button type="button" data-direction="-1" aria-label="Previous design">←</button>
     <div><span class="switcher-caption">DESIGN EXPLORATION</span><span id="variant-label" aria-live="polite"></span></div>
-    <div class="variant-dots"><a href="?variant=A" aria-label="Design A: Midnight Studio">01</a><a href="?variant=B" aria-label="Design B: The Atelier">02</a><a href="?variant=C" aria-label="Design C: Performance">03</a><a href="?variant=D" aria-label="Design D: Purple Noir">04</a><a href="?variant=E" aria-label="Design E: Silver Signature">05</a><a href="?variant=F" aria-label="Design F: Daylight Studio">06</a></div>
+    <div class="variant-dots"><a href="./?variant=A" aria-label="Design A: Midnight Studio">01</a><a href="./?variant=B" aria-label="Design B: The Atelier">02</a><a href="./?variant=C" aria-label="Design C: Performance">03</a><a href="./?variant=D" aria-label="Design D: Purple Noir">04</a><a href="./?variant=E" aria-label="Design E: Silver Signature">05</a><a href="daylight.html?variant=F" aria-label="Design F: Daylight Studio">06</a></div>
     <button type="button" data-direction="1" aria-label="Next design">→</button>
   </nav>
   <noscript>These interactive prototypes need JavaScript. Visit <a href="https://supershinedetailing.automarktninja.com/ceramic-coating">Super Shine Auto Detailing</a> for the original offer.</noscript>

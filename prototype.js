@@ -25,7 +25,7 @@ function VariantA() {
     ${why()}${portfolio()}${quote()}${faq()}
   </main>${footer()}`;
 }
-const variants = {A: {name: 'Midnight Studio', render: VariantA}, B: {name: 'The Atelier', render: window.VariantB}, C: {name: 'Performance', render: window.VariantC}, D: {name: 'Purple Noir', render: window.VariantD}, E: {name: 'Silver Signature', render: window.VariantE}, F: {name: 'Daylight Studio', render: window.VariantF}};
+const variants = {A: {name: 'Midnight Studio', render: VariantA}, B: {name: 'The Atelier', render: window.VariantB}, C: {name: 'Performance', render: window.VariantC}, D: {name: 'Purple Noir', render: window.VariantD}, E: {name: 'Silver Signature', render: window.VariantE}, F: {name: 'Daylight Studio'}};
 const keys = Object.keys(variants);
 let current;
 const quoteDialog = document.getElementById('quote-dialog');
@@ -33,44 +33,29 @@ let quoteTrigger;
 function renderVariant(key, updateUrl = false) {
   if (quoteDialog.open) quoteDialog.close();
   current = keys.includes(key) ? key : 'A';
+  const app = document.getElementById('app');
+  if (current === 'F' && app.dataset.variant !== 'F') {
+    const url = new URL('daylight.html', location.href);
+    url.search = location.search;
+    url.searchParams.set('variant', 'F');
+    url.hash = updateUrl ? '' : location.hash;
+    location[updateUrl ? 'assign' : 'replace'](url.href);
+    return;
+  }
   if (updateUrl) {
     const url = new URL(location.href);
+    url.pathname = new URL(current === 'F' ? 'daylight.html' : './', location.href).pathname;
     url.searchParams.set('variant', current);
     url.hash = '';
     history.pushState({}, '', url);
   }
   document.body.className = `variant-${current.toLowerCase()}`;
-  document.getElementById('app').innerHTML = variants[current].render();
-  const inlineQuote = document.getElementById('hero-quote');
+  // The static F page already contains live frames. Never replace or reparent them.
+  if (current !== 'F') app.innerHTML = variants[current].render();
+  app.dataset.variant = current;
   const dialogForm = quoteDialog.querySelector('.dialog-form');
   dialogForm.replaceChildren();
-  if (inlineQuote) {
-    const bottomQuote = document.createElement('div');
-    bottomQuote.className = 'ghl-quote';
-    document.querySelector('#quote .quote-form').replaceWith(bottomQuote);
-    // GHL hides frames off-screen during startup; lazy loading would leave them unloaded.
-    [inlineQuote, bottomQuote].forEach((container, index) => {
-      const id = `inline-aOzToGS2zimSOi3gUPpY-${index}`;
-      container.innerHTML = `<iframe
-        class="ghl-form-frame" id="${id}"
-        src="https://api.leadconnectorhq.com/widget/form/aOzToGS2zimSOi3gUPpY"
-        title="Request your free ceramic coating quote" height="390"
-        loading="eager"
-        sandbox="allow-scripts allow-forms allow-same-origin allow-popups"
-        data-layout='{"id":"INLINE"}' data-layout-iframe-id="${id}"
-        data-trigger-type="alwaysShow" data-activation-type="alwaysActivated"
-        data-deactivation-type="neverDeactivate"
-        data-form-name="Ceramic Coating (Google)"
-        data-form-id="aOzToGS2zimSOi3gUPpY"></iframe>`;
-    });
-    if (!document.getElementById('ghl-form-embed')) {
-      const script = document.createElement('script');
-      script.id = 'ghl-form-embed';
-      script.src = 'https://link.msgsndr.com/js/form_embed.js';
-      document.head.append(script);
-    }
-    document.querySelector('.footer-bottom span:last-child').textContent = 'Free quotes · Super Shine Auto Detailing';
-  } else {
+  if (current !== 'F') {
     const quoteForm = document.querySelector('#quote .quote-form').cloneNode(true);
     quoteForm.querySelector('input').autofocus = true;
     dialogForm.append(quoteForm);
@@ -138,25 +123,7 @@ document.addEventListener('submit', event => {
   status.hidden = false;
   status.focus();
 });
-// GHL emits this iframe-specific lead-collected message after its submission succeeds,
-// not when submit is clicked or sticky contacts are loaded. No contact data is retained here.
-// The iframe sandbox blocks GHL's separate top-level redirect; this site owns navigation.
-// Configure spacing in GHL's Custom CSS, not the cross-origin parent page:
-// .hl-app .hl_form-builder--main, #_builder-form .fields-container { padding: 0 !important; }
-// .ghl-form-wrap { margin: 0 !important; }
-// #_builder-form { padding: 0 !important; border: 0 !important; box-shadow: none !important; }
-window.addEventListener('message', event => {
-  if (event.origin !== 'https://api.leadconnectorhq.com') return;
-  const frame = [...document.querySelectorAll('iframe.ghl-form-frame')].find(frame => event.source === frame.contentWindow);
-  if (!frame) return;
-  if (!Array.isArray(event.data)) return;
-  const [action, storageKey, frameId, locationId, fingerprint] = event.data;
-  if (action !== 'set-sticky-contacts' || locationId !== '60EP3VXxgFgxW4TtU50H' ||
-      frameId !== frame.id || storageKey !== `embedded_iframe_${frameId}` ||
-      typeof fingerprint !== 'string' || !fingerprint) return;
-  window.location.assign(new URL('thank-you.html', window.location.href).href);
-});
-window.addEventListener('popstate', () => renderVariant(new URLSearchParams(location.search).get('variant')));
-renderVariant(new URLSearchParams(location.search).get('variant'));
+window.addEventListener('popstate', () => renderVariant(new URLSearchParams(location.search).get('variant') || (location.pathname.endsWith('/daylight.html') ? 'F' : 'A')));
+renderVariant(new URLSearchParams(location.search).get('variant') || document.getElementById('app').dataset.variant);
 // Keep comparison controls out of non-local deployment previews; all variant URLs still work.
 if (!['localhost','127.0.0.1','[::1]',''].includes(location.hostname)) document.querySelector('.prototype-switcher').hidden = true;

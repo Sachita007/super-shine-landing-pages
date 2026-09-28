@@ -1,7 +1,17 @@
-// Prototype F: light/dark sections, original-color photography, and an inline hero quote form.
+// Variant F build source. Run `node build-daylight.mjs` after changing this or shared content.
 // Hero source: https://assets.cdn.filesafe.space/t4pRauen0e51uGetOHK7/media/6372830a-8782-4fa8-8227-1b38097a81d9.png (lossless WebP conversion).
+// Saved in GHL Custom CSS (the parent cannot style a cross-origin form):
+// .hl-app .hl_form-builder--main, #_builder-form .fields-container { padding: 0 !important; }
+// .ghl-form-wrap { margin: 0 !important; }
+// #_builder-form { padding: 0 !important; border: 0 !important; box-shadow: none !important; }
 window.VariantF = () => {
   const {header, benefits, why, portfolio, quote, faq, footer, button} = window.UI;
+  // Plain inline frames avoid GHL's layout wrappers reparenting and reloading the document.
+  const form = index => `<iframe class="ghl-form-frame" id="inline-aOzToGS2zimSOi3gUPpY-${index}"
+    src="https://api.leadconnectorhq.com/widget/form/aOzToGS2zimSOi3gUPpY"
+    title="Request your free ceramic coating quote" height="390" loading="eager"
+    sandbox="allow-scripts allow-forms allow-same-origin allow-popups"
+    data-form-id="aOzToGS2zimSOi3gUPpY"></iframe>`;
   return `${header()}
   <main id="main">
     <section class="daylight-hero" aria-labelledby="daylight-title">
@@ -18,7 +28,7 @@ window.VariantF = () => {
         <aside class="daylight-card" aria-labelledby="daylight-form-title">
           <h2 id="daylight-form-title">Your shine starts here.</h2>
           <p>Start with your name, number, and vehicle.</p>
-          <div id="hero-quote"></div>
+          <div id="hero-quote">${form(0)}</div>
         </aside>
       </div>
     </section>
@@ -31,7 +41,7 @@ window.VariantF = () => {
       ${why()}
     </div>
     ${portfolio()}
-    <div class="daylight-dark">${quote()}</div>
+    <div class="daylight-dark">${quote().replace(/<form class="quote-form">[\s\S]*?<\/form>/, `<div class="ghl-quote">${form(1)}</div>`)}</div>
     ${faq()}
-  </main>${footer()}`;
+  </main>${footer().replace('Independent design prototype · Not a live booking page', 'Free quotes · Super Shine Auto Detailing')}`;
 };
