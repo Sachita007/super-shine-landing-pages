@@ -77,6 +77,9 @@ body.variant-f :is(a, button, input, summary):focus-visible { outline-color: var
   body.variant-f .daylight-offer s { font-size: 13px; }
 }
 @media (max-width: 760px) {
+  /* Keep tap-to-call in the mobile header instead of duplicate navigation. */
+  body.variant-f .menu-toggle { display: none; }
+  body.variant-f .header-call { display: inline-flex; align-items: center; flex-shrink: 0; min-height: 44px; white-space: nowrap; font-size: 12px; }
   body.variant-f .daylight-grid { grid-template-columns: minmax(0, 1fr); gap: 25px; padding-block: 28px; }
   body.variant-f .daylight-hero::before { background: linear-gradient(90deg, #fffffff2 0%, #ffffffb3 55%, #ffffff66 100%); }
   body.variant-f .daylight-backdrop { height: 340px; object-position: 45% center; mask-image: linear-gradient(#000 80%, transparent); }
@@ -91,6 +94,13 @@ body.variant-f :is(a, button, input, summary):focus-visible { outline-color: var
   body.variant-f .daylight-card h2 { font-size: 26px; }
 }
 @media (max-width: 380px) {
+  body.variant-f .site-header { gap: 8px; }
+  body.variant-f .site-header .brand { gap: 6px; }
+  body.variant-f .site-header .brand img { width: 32px; height: 32px; }
+  body.variant-f .site-header .brand > span { font-size: 11px; }
+  body.variant-f .site-header .brand small { font-size: 6px; }
+  body.variant-f .header-call { font-size: 11px; }
+  body.variant-f .phone-symbol { width: 22px; height: 22px; margin-right: 5px; }
   body.variant-f .daylight-offer { gap: 13px; }
   body.variant-f .daylight-offer > strong { font-size: 82px; }
   body.variant-f .daylight-offer s { font-size: 12px; }
