@@ -35,7 +35,7 @@ const send = (method, params = {}) => new Promise((resolve, reject) => {
 });
 const evaluate = async expression => {
   const result = await send('Runtime.evaluate', { expression, returnByValue: true });
-  if (result.exceptionDetails) throw new Error(result.exceptionDetails.text);
+  if (result.exceptionDetails) throw new Error(result.exceptionDetails.exception?.description || result.exceptionDetails.text);
   return result.result.value;
 };
 const until = async (predicate, label) => {
@@ -76,7 +76,7 @@ try {
   await evaluate('renderVariant("A", true)');
   assert.equal(await evaluate('document.querySelector(".ghl-form-frame") === null && !!document.querySelector(".quote-form")'), true);
   await evaluate('history.back()');
-  await until(() => evaluate('document.body.classList.contains("variant-f") && document.querySelectorAll(".ghl-form-frame").length === 2'), 'back navigation to static F');
+  await until(() => evaluate('document.body?.classList.contains("variant-f") && document.querySelectorAll(".ghl-form-frame").length === 2'), 'back navigation to static F');
   console.log('PASS: Variant A remains a preview; browser Back returns to the live F page.');
 
   // Simulate only the provider's parent-window messages; never submit a lead.
