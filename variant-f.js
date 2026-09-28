@@ -30,7 +30,7 @@ window.VariantF = () => {
     <div class="container"><section class="studio-statement"><img src="assets/coating.webp" alt="Close-up showing a ceramic-coated automotive finish" width="800" height="600" loading="lazy"><div><span class="eyebrow">PROTECT WHAT MOVES YOU</span><h2>Built for the road.<br>Ready for the<br>second looks.</h2><p>Sun, dirt, and everyday driving take a toll on paint. Our premium ceramic coating puts a durable layer between your finish and the elements — without hiding what makes it yours.</p>${button('Give your paint an upgrade')}</div></section></div>
       ${why()}
     </div>
-    <div class="daylight-portfolio">${portfolio()}</div>
+    ${portfolio()}
     <div class="daylight-dark">${quote()}</div>
     ${faq()}
   </main>${footer()}`;
