@@ -48,13 +48,14 @@ function renderVariant(key, updateUrl = false) {
     const bottomQuote = document.createElement('div');
     bottomQuote.className = 'ghl-quote';
     document.querySelector('#quote .quote-form').replaceWith(bottomQuote);
+    // GHL hides frames off-screen during startup; lazy loading would leave them unloaded.
     [inlineQuote, bottomQuote].forEach((container, index) => {
       const id = `inline-aOzToGS2zimSOi3gUPpY-${index}`;
       container.innerHTML = `<iframe
         class="ghl-form-frame" id="${id}"
         src="https://api.leadconnectorhq.com/widget/form/aOzToGS2zimSOi3gUPpY"
         title="Request your free ceramic coating quote" height="390"
-        loading="${index ? 'lazy' : 'eager'}"
+        loading="eager"
         sandbox="allow-scripts allow-forms allow-same-origin allow-popups"
         data-layout='{"id":"INLINE"}' data-layout-iframe-id="${id}"
         data-trigger-type="alwaysShow" data-activation-type="alwaysActivated"
