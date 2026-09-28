@@ -42,7 +42,10 @@ function renderVariant(key, updateUrl = false) {
   document.body.className = `variant-${current.toLowerCase()}`;
   document.getElementById('app').innerHTML = variants[current].render();
   const inlineQuote = document.getElementById('hero-quote');
-  if (inlineQuote) document.querySelector('#quote .form-note').remove();
+  if (inlineQuote) {
+    document.querySelector('#quote .form-note').remove();
+    document.querySelector('#quote button[type="submit"]').firstChild.textContent = 'Get my free quote ';
+  }
   const quoteForm = document.querySelector('#quote .quote-form').cloneNode(true);
   const dialogForm = quoteDialog.querySelector('.dialog-form');
   dialogForm.replaceChildren();

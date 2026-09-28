@@ -12,7 +12,7 @@ window.VariantF = () => {
           <h1 id="daylight-title">10-year premium<br><span>ceramic coating.</span></h1>
           <div class="daylight-offer"><strong>$599</strong><div><s>Normally $1,200</s><span>SAVE $601</span></div></div>
           <p>Exceptional gloss. Everyday protection. Premium ceramic coating with up to a 10-year warranty.</p>
-          <div class="hero-buttons">${button('Get my $599 quote')}<a class="text-link" href="#portfolio">See the finish ↗</a></div>
+          <div class="hero-buttons"><a class="text-link" href="#portfolio">See the finish ↗</a></div>
           <div class="hero-assurance"><span>Free, no-pressure quote</span><span>Multi-certified specialists</span></div>
         </div>
         <aside class="daylight-card" aria-labelledby="daylight-form-title">
