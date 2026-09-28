@@ -1,4 +1,4 @@
-// Throwaway visual exploration. Run: python3 -m http.server 4173 --bind 127.0.0.1
+// Run locally: python3 -m http.server 4173 --bind 127.0.0.1. A–E are previews; F submits through GHL.
 function VariantA() {
   const {header, benefits, why, portfolio, quote, faq, footer, button} = window.UI;
   return `${header()}
@@ -42,15 +42,38 @@ function renderVariant(key, updateUrl = false) {
   document.body.className = `variant-${current.toLowerCase()}`;
   document.getElementById('app').innerHTML = variants[current].render();
   const inlineQuote = document.getElementById('hero-quote');
-  if (inlineQuote) {
-    document.querySelector('#quote .form-note').remove();
-    document.querySelector('#quote button[type="submit"]').firstChild.textContent = 'Get my free quote ';
-  }
-  const quoteForm = document.querySelector('#quote .quote-form').cloneNode(true);
   const dialogForm = quoteDialog.querySelector('.dialog-form');
   dialogForm.replaceChildren();
-  quoteForm.querySelector('input').autofocus = !inlineQuote;
-  (inlineQuote || dialogForm).append(quoteForm);
+  if (inlineQuote) {
+    const bottomQuote = document.createElement('div');
+    bottomQuote.className = 'ghl-quote';
+    document.querySelector('#quote .quote-form').replaceWith(bottomQuote);
+    [inlineQuote, bottomQuote].forEach((container, index) => {
+      const id = `inline-aOzToGS2zimSOi3gUPpY-${index}`;
+      container.innerHTML = `<iframe
+        class="ghl-form-frame" id="${id}"
+        src="https://api.leadconnectorhq.com/widget/form/aOzToGS2zimSOi3gUPpY"
+        title="Request your free ceramic coating quote" height="390"
+        loading="${index ? 'lazy' : 'eager'}"
+        sandbox="allow-scripts allow-forms allow-same-origin allow-popups"
+        data-layout='{"id":"INLINE"}' data-layout-iframe-id="${id}"
+        data-trigger-type="alwaysShow" data-activation-type="alwaysActivated"
+        data-deactivation-type="neverDeactivate"
+        data-form-name="Ceramic Coating (Google)"
+        data-form-id="aOzToGS2zimSOi3gUPpY"></iframe>`;
+    });
+    if (!document.getElementById('ghl-form-embed')) {
+      const script = document.createElement('script');
+      script.id = 'ghl-form-embed';
+      script.src = 'https://link.msgsndr.com/js/form_embed.js';
+      document.head.append(script);
+    }
+    document.querySelector('.footer-bottom span:last-child').textContent = 'Free quotes · Super Shine Auto Detailing';
+  } else {
+    const quoteForm = document.querySelector('#quote .quote-form').cloneNode(true);
+    quoteForm.querySelector('input').autofocus = true;
+    dialogForm.append(quoteForm);
+  }
   document.getElementById('variant-label').textContent = `${current} — ${variants[current].name}`;
   document.title = `${variants[current].name} | Super Shine Auto Detailing`;
   document.querySelectorAll('.variant-dots a').forEach(a => {
@@ -81,7 +104,7 @@ document.addEventListener('click', event => {
     const inlineQuote = document.getElementById('hero-quote');
     if (inlineQuote) {
       inlineQuote.closest('.daylight-card').scrollIntoView({block: 'start'});
-      inlineQuote.querySelector('input').focus({preventScroll: true});
+      inlineQuote.querySelector('iframe').focus({preventScroll: true});
     } else {
       quoteTrigger = trigger.closest('#mobile-menu') ? document.querySelector('.menu-toggle') : trigger;
       quoteDialog.showModal();
@@ -113,6 +136,24 @@ document.addEventListener('submit', event => {
   status.textContent = `Preview ready for ${data.get('vehicle').trim()}. This request has not been sent. Call (775) 220-7064 or use the live website to claim the $599 offer.`;
   status.hidden = false;
   status.focus();
+});
+// GHL emits this iframe-specific lead-collected message after its submission succeeds,
+// not when submit is clicked or sticky contacts are loaded. No contact data is retained here.
+// The iframe sandbox blocks GHL's separate top-level redirect; this site owns navigation.
+// Configure spacing in GHL's Custom CSS, not the cross-origin parent page:
+// .hl-app .hl_form-builder--main, #_builder-form .fields-container { padding: 0 !important; }
+// .ghl-form-wrap { margin: 0 !important; }
+// #_builder-form { padding: 0 !important; border: 0 !important; box-shadow: none !important; }
+window.addEventListener('message', event => {
+  if (event.origin !== 'https://api.leadconnectorhq.com') return;
+  const frame = [...document.querySelectorAll('iframe.ghl-form-frame')].find(frame => event.source === frame.contentWindow);
+  if (!frame) return;
+  if (!Array.isArray(event.data)) return;
+  const [action, storageKey, frameId, locationId, fingerprint] = event.data;
+  if (action !== 'set-sticky-contacts' || locationId !== '60EP3VXxgFgxW4TtU50H' ||
+      frameId !== frame.id || storageKey !== `embedded_iframe_${frameId}` ||
+      typeof fingerprint !== 'string' || !fingerprint) return;
+  window.location.assign(new URL('thank-you.html', window.location.href).href);
 });
 window.addEventListener('popstate', () => renderVariant(new URLSearchParams(location.search).get('variant')));
 renderVariant(new URLSearchParams(location.search).get('variant'));

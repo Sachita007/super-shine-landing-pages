@@ -30,11 +30,9 @@ body.variant-f .hero-assurance { color: #414141; }
 body.variant-f .daylight-card { min-width: 0; padding: 28px; background: #fff; border: 1px solid #d0d0d0; box-shadow: 0 16px 50px #00000012; }
 body.variant-f .daylight-card h2 { font-size: 27px; line-height: 1.2; font-weight: 600; }
 body.variant-f .daylight-card > p { font-size: 11px; margin: 10px 0 22px; }
-body.variant-f .daylight-card .form-kicker { display: none; }
-body.variant-f .daylight-card .quote-form { gap: 13px; }
-body.variant-f .quote-form input { font-size: 16px; border-radius: 0; background: #fafafa; }
-body.variant-f .daylight-card .quote-form input { padding: 11px 13px; }
-body.variant-f .daylight-card .button { padding: 16px; font-size: 11px; gap: 12px; }
+body.variant-f .ghl-form-frame { display: block; width: 100%; border: 0; background: #fff; }
+body.variant-f .ghl-quote { min-width: 0; align-self: start; padding: 24px 12px; background: #fff; }
+body.variant-f :is(#hero-quote, .ghl-quote) { min-height: 390px; }
 body.variant-f .button { border-radius: 0; }
 body.variant-f .button:hover { background: #ccea2c; }
 body.variant-f .google-letter { color: var(--text); }
@@ -57,10 +55,9 @@ body.variant-f .daylight-dark, body.variant-f .site-footer {
 }
 body.variant-f .daylight-story { padding-top: 54px; }
 body.variant-f .studio-trust strong { color: var(--accent); }
-body.variant-f .daylight-dark .quote-form input { background: var(--bg); }
-body.variant-f :is(.eyebrow, .benefit-icon, .reason-number, .stars, .quote-price small, .quote-form label > span) { color: var(--accent-ink); }
+body.variant-f :is(.eyebrow, .benefit-icon, .reason-number, .stars, .quote-price small) { color: var(--accent-ink); }
 body.variant-f summary::after, body.variant-f .hero-assurance span::before, body.variant-f .text-link:hover { color: var(--accent-ink); }
-body.variant-f :is(a, button, input, summary):focus-visible { outline-color: var(--accent-ink); }
+body.variant-f :is(a, button, iframe, summary):focus-visible { outline: 3px solid var(--accent-ink); outline-offset: 5px; }
 @media (max-width: 1000px) {
   body.variant-f .daylight-grid { gap: 30px; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
   body.variant-f .daylight-copy h1 { font-size: clamp(30px, 4.1vw, 40px); }
