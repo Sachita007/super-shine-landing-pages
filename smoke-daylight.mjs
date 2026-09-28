@@ -48,6 +48,11 @@ const until = async (predicate, label) => {
 try {
   await send('Page.enable');
   await send('Network.enable');
+  // Keep synthetic thank-you visits out of production analytics and ad conversions.
+  await send('Network.setBlockedURLs', { urls: [
+    '*google-analytics.com/*', '*analytics.google.com/*', '*doubleclick.net/*',
+    '*googleadservices.com/*', '*google.*/pagead/*', '*googletagmanager.com/td*'
+  ] });
   await send('Network.setCacheDisabled', { cacheDisabled: true });
   await send('Fetch.enable', { patterns: [{ urlPattern: '*prototype.js*', requestStage: 'Request' }] });
   await send('Page.navigate', { url: new URL('daylight.html', site).href });
