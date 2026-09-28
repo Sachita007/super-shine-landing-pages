@@ -41,8 +41,9 @@ function renderVariant(key, updateUrl = false) {
   }
   document.body.className = `variant-${current.toLowerCase()}`;
   document.getElementById('app').innerHTML = variants[current].render();
-  const quoteForm = document.querySelector('#quote .quote-form').cloneNode(true);
   const inlineQuote = document.getElementById('hero-quote');
+  if (inlineQuote) document.querySelector('#quote .form-note').remove();
+  const quoteForm = document.querySelector('#quote .quote-form').cloneNode(true);
   const dialogForm = quoteDialog.querySelector('.dialog-form');
   dialogForm.replaceChildren();
   quoteForm.querySelector('input').autofocus = !inlineQuote;

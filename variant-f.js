@@ -1,10 +1,11 @@
 // Prototype F: light/dark sections, original-color photography, and an inline hero quote form.
+// Hero source: https://assets.cdn.filesafe.space/t4pRauen0e51uGetOHK7/media/6372830a-8782-4fa8-8227-1b38097a81d9.png (lossless WebP conversion).
 window.VariantF = () => {
   const {header, benefits, why, portfolio, quote, faq, footer, button} = window.UI;
   return `${header()}
   <main id="main">
     <section class="daylight-hero" aria-labelledby="daylight-title">
-      <img class="daylight-backdrop" src="assets/corvette.webp" alt="" width="1142" height="1324" fetchpriority="high">
+      <img class="daylight-backdrop" src="assets/source-hero.webp" alt="" width="1536" height="1024" fetchpriority="high">
       <div class="container daylight-grid">
         <div class="daylight-copy">
           <span class="eyebrow">LIMITED-TIME OFFER · STOCKTON, CA</span>
@@ -29,7 +30,7 @@ window.VariantF = () => {
     <div class="container"><section class="studio-statement"><img src="assets/coating.webp" alt="Close-up showing a ceramic-coated automotive finish" width="800" height="600" loading="lazy"><div><span class="eyebrow">PROTECT WHAT MOVES YOU</span><h2>Built for the road.<br>Ready for the<br>second looks.</h2><p>Sun, dirt, and everyday driving take a toll on paint. Our premium ceramic coating puts a durable layer between your finish and the elements — without hiding what makes it yours.</p>${button('Give your paint an upgrade')}</div></section></div>
       ${why()}
     </div>
-    ${portfolio()}
+    <div class="daylight-portfolio">${portfolio()}</div>
     <div class="daylight-dark">${quote()}</div>
     ${faq()}
   </main>${footer()}`;
