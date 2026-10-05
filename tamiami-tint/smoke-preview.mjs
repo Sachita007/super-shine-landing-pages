@@ -58,7 +58,7 @@ try {
       assert.equal(review.excerpt, source.excerpt);
       assert.deepEqual(review.links, [source.url, source.url]);
     }
-    assert.equal(await inside(`document.querySelector('.daylight-offer strong').textContent`), '$299');
+    assert.equal(await inside(`document.querySelector('.daylight-offer strong').textContent`), '$399');
     assert.equal(await inside(`document.querySelector('.included').textContent`), '(Includes all 4 windows and Rear Windshield)');
     assert.ok(await inside(`[...document.querySelectorAll('a[href^="#"]')].every(a=>document.getElementById(a.getAttribute('href').slice(1)))`), 'Valid local navigation targets');
     await inside(`document.querySelector('a[href="#quote"]').click()`);
