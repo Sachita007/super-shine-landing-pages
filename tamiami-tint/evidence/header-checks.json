@@ -1,0 +1,167 @@
+{
+  "passed": true,
+  "browser": "Orca embedded",
+  "results": [
+    {
+      "width": 1440,
+      "clientWidth": 1424,
+      "scrollWidth": 1424,
+      "header": {
+        "left": 0,
+        "right": 1424.0787353515625,
+        "width": 1424.0787353515625,
+        "height": 87.087890625
+      },
+      "logo": {
+        "left": 112.02638244628906,
+        "right": 302.0176544189453,
+        "width": 189.99127197265625,
+        "height": 63.244842529296875
+      },
+      "call": {
+        "left": 1155.1640625,
+        "right": 1312.0523529052734,
+        "width": 156.88829040527344,
+        "height": 46.28255844116211
+      },
+      "phone": "tel:+12397105111",
+      "focused": true,
+      "navVisible": true,
+      "nav": {
+        "left": 590.855712890625,
+        "right": 866.325927734375,
+        "width": 275.47021484375,
+        "height": 43.98896789550781
+      }
+    },
+    {
+      "width": 1024,
+      "clientWidth": 1007,
+      "scrollWidth": 1007,
+      "header": {
+        "left": 0,
+        "right": 1007.8095703125,
+        "width": 1007.8095703125,
+        "height": 87.087890625
+      },
+      "logo": {
+        "left": 27.985200881958008,
+        "right": 217.97647285461426,
+        "width": 189.99127197265625,
+        "height": 63.244842529296875
+      },
+      "call": {
+        "left": 822.93603515625,
+        "right": 979.8243255615234,
+        "width": 156.88829040527344,
+        "height": 46.28255844116211
+      },
+      "phone": "tel:+12397105111",
+      "focused": true,
+      "navVisible": true,
+      "nav": {
+        "left": 372.7252197265625,
+        "right": 668.1873168945312,
+        "width": 295.46209716796875,
+        "height": 43.98896789550781
+      }
+    },
+    {
+      "width": 767,
+      "clientWidth": 751,
+      "scrollWidth": 751,
+      "header": {
+        "left": 0,
+        "right": 751.4754028320312,
+        "width": 751.4754028320312,
+        "height": 87.087890625
+      },
+      "logo": {
+        "left": 27.985200881958008,
+        "right": 217.97647285461426,
+        "width": 189.99127197265625,
+        "height": 63.244842529296875
+      },
+      "call": {
+        "left": 566.6018676757812,
+        "right": 723.4901580810547,
+        "width": 156.88829040527344,
+        "height": 46.28255844116211
+      },
+      "phone": "tel:+12397105111",
+      "focused": true,
+      "navVisible": true,
+      "nav": {
+        "left": 265.3031311035156,
+        "right": 519.2752380371094,
+        "width": 253.97210693359375,
+        "height": 43.98896789550781
+      }
+    },
+    {
+      "width": 389,
+      "clientWidth": 373,
+      "scrollWidth": 373,
+      "header": {
+        "left": 0,
+        "right": 373.5467834472656,
+        "width": 373.5467834472656,
+        "height": 77.09194946289062
+      },
+      "logo": {
+        "left": 19.99187469482422,
+        "right": 159.98633575439453,
+        "width": 139.9944610595703,
+        "height": 46.60776901245117
+      },
+      "call": {
+        "left": 243.68519592285156,
+        "right": 353.55492401123047,
+        "width": 109.8697280883789,
+        "height": 43.98896789550781
+      },
+      "phone": "tel:+12397105111",
+      "focused": true,
+      "navVisible": false,
+      "nav": {
+        "left": 0,
+        "right": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "width": 319,
+      "clientWidth": 303,
+      "scrollWidth": 303,
+      "header": {
+        "left": 0,
+        "right": 303.43829345703125,
+        "width": 303.43829345703125,
+        "height": 77.09194946289062
+      },
+      "logo": {
+        "left": 15.986652374267578,
+        "right": 143.98257064819336,
+        "width": 127.99591827392578,
+        "height": 42.60254669189453
+      },
+      "call": {
+        "left": 184.5140380859375,
+        "right": 287.45165252685547,
+        "width": 102.93761444091797,
+        "height": 43.98896789550781
+      },
+      "phone": "tel:+12397105111",
+      "focused": true,
+      "navVisible": false,
+      "nav": {
+        "left": 0,
+        "right": 0,
+        "width": 0,
+        "height": 0
+      }
+    }
+  ],
+  "method": "fixed-width same-origin iframe; DOM focus/navigation checks, not native mobile emulation or keyboard focus-visible proof"
+}

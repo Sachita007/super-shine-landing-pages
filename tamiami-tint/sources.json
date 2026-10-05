@@ -1,0 +1,193 @@
+{
+  "checked": "2026-10-05",
+  "officialWebsite": "https://naplesfltint.com/",
+  "googleListing": "https://www.google.com/search?kgmid=/g/11yf5cpnbx&q=Tamiami+Tint+Of+Naples",
+  "logo": "https://naplesfltint.com/logo-header.png",
+  "offer": {
+    "price": 299,
+    "includes": "all 4 windows and Rear Windshield",
+    "film": "Confirm with shop; not advertised as ceramic"
+  },
+  "heroImage": {
+    "asset": "assets/tint-range-rover.webp",
+    "source": "https://naplesfltint.com/projects/land-rover-range-rover/after-1.jpg",
+    "dimensions": [1600, 1200]
+  },
+  "gallery": [
+    {
+      "asset": "assets/tint-targa.webp",
+      "source": "https://naplesfltint.com/projects/porsche-911-targa/after-1.jpg",
+      "project": "https://naplesfltint.com/vehicles/porsche/porsche-911-targa-black/",
+      "dimensions": [1440, 1080]
+    },
+    {
+      "asset": "assets/tint-taycan.webp",
+      "source": "https://naplesfltint.com/projects/porsche-taycan/after-1.jpg",
+      "project": "https://naplesfltint.com/vehicles/porsche/porsche-taycan-white/",
+      "dimensions": [1440, 1080]
+    },
+    {
+      "asset": "assets/tint-bentley.webp",
+      "source": "https://naplesfltint.com/projects/bentley-continental/after-1.jpg",
+      "project": "https://naplesfltint.com/vehicles/bentley/bentley-continental-gtc/",
+      "dimensions": [1440, 1080]
+    },
+    {
+      "asset": "assets/tint-ferrari.webp",
+      "source": "https://naplesfltint.com/projects/ferrari/after-1.jpg",
+      "project": "https://naplesfltint.com/vehicles/ferrari/ferrari-red/",
+      "originalDimensions": [901, 1600],
+      "cropBox": [150, 650, 850, 1175],
+      "dimensions": [700, 525]
+    }
+  ],
+  "galleryRevision": {
+    "change": "Replaced all four portfolio photos with different official Tamiami tint projects: Porsche Targa, Porsche Taycan, Bentley GTC and Ferrari 458. Captions and links match their own project pages.",
+    "verification": "Images and project destinations verified from the official gallery in Orca; all project URLs returned HTTP 200. Desktop and mobile smoke checks confirm loaded images, uniform filled 4:3 frames and no horizontal overflow.",
+    "evidence": ["evidence/orca-1440-portfolio.png", "evidence/orca-390-portfolio.png", "evidence/orca-320-portfolio.png"],
+    "scope": "Portfolio only. Hero, story card and reviewer-owned photos are unchanged."
+  },
+  "storyImage": {
+    "asset": "assets/story-ferrari.webp",
+    "source": "https://naplesfltint.com/projects/ferrari/after-1.jpg",
+    "project": "https://naplesfltint.com/vehicles/ferrari/ferrari-red/",
+    "service": "Automotive window tinting",
+    "originalDimensions": [901, 1600],
+    "cropBox": [240, 470, 800, 1170],
+    "assetDimensions": [560, 700],
+    "selection": "Compared Ferrari, Porsche Taycan, Bentley Continental and Porsche 911 Targa photos on the official website in Orca. Selected the portrait Ferrari photo and cropped around the entire vehicle.",
+    "layout": "Tall 4:5 photo flush to the card edges; vertically centered desktop copy; stacked portrait and copy on mobile.",
+    "evidence": ["evidence/orca-1440-story.png", "evidence/orca-390-story.png", "evidence/orca-320-story.png"],
+    "scope": "Story card only. Hero, portfolio photos and reviewer-owned photos unchanged."
+  },
+  "reviews": [
+    {
+      "name": "Dawna Gold",
+      "rating": 5,
+      "excerpt": "What an Amazing Quick quality installation.  Eddie of TAMIAMI Tint explained the different types of tint and went straight to work.",
+      "url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25abmJtdGtTRU5EZUdkSVZXbE5PQzA0UTBFMk1GRRAB!2m1!1s0x0:0x11e26e5cfd874f9!3m1!1s2@1:CAIQACodChtycF9oOnZnbmtkSENDeGdIVWlNOC04Q0E2MFE%7C%7C?hl=en-GB",
+      "asset": "assets/review-dawna-gold.webp",
+      "photoOrdinal": 2,
+      "photoSource": "https://lh3.googleusercontent.com/grass-cs/AABkmLdvvAKMwGrlAQMXVIYBaePJLVIgDfbxhh9_nfn8MNtYkWv2A8b3z7GCmHIcOyzDokg7KKxYIGtotXVBD9bXXPQU1rFBFj6URGo00AAT8dpCaXrAtVn0xPr9XRBTcQMOqqG9EB-BOUkxRbhw=s1000",
+      "dimensions": [
+        750,
+        1000
+      ],
+      "permalinkVerified": true
+    },
+    {
+      "name": "Jeremy Rosario",
+      "rating": 5,
+      "excerpt": "High quality ceramic tint, high quality work completed quickly and efficiently. Both cars have come out looking super clean and professionally done.",
+      "url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xRNGJrVkpjVGhsUXpnM1dVZFRNRE15Y21oVFRrRRAB!2m1!1s0x0:0x11e26e5cfd874f9!3m1!1s2@1:CAIQACodChtycF9oOlQ4bkVJcThlQzg3WUdTMDMycmhTTkE%7C%7C?hl=en-GB",
+      "asset": "assets/review-jeremy-rosario.webp",
+      "photoOrdinal": 1,
+      "photoSource": "https://lh3.googleusercontent.com/grass-cs/AABkmLdSIoNTry9W0WfUNGvUG6k_EZjq7oUAbYt5Xa7MGkn1dY57vs9jL8V-D8B9ZiGjE40C8tgxCZdWuOpZlUEiKYwQc0qI1R6sTP_cpIjGpuT0nH7A9n-MyO9O3SoYTatC7HCgrjPkKdm1G_U=s1000",
+      "dimensions": [
+        1000,
+        750
+      ],
+      "permalinkVerified": true
+    },
+    {
+      "name": "alexandru budeanu",
+      "rating": 5,
+      "excerpt": "Good quality, fast, reliable. One of the best window tint in Naples, Florida. Thank you!",
+      "url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT210WE0yVlJTMnBrTWpGWFRVeDJNblJHTFdSSVNYYxAB!2m1!1s0x0:0x11e26e5cfd874f9!3m1!1s2@1:CAIQACodChtycF9oOmtXM2VRS2pkMjFXTUx2MnRGLWRISXc%7C%7C?hl=en-GB",
+      "asset": "assets/review-alexandru-budeanu.webp",
+      "photoOrdinal": 1,
+      "photoSource": "https://lh3.googleusercontent.com/grass-cs/AABkmLe0QrXbhuTjzdiRGuiDIsxxYXdjMkfX6F91VGgI3ydCUrhONuXTwXM4C-GBnUwBbPLDCB0a6GZ4LkT4JTO4pjReKCaSZhQ1r3Llsqm5Gsb-YZSyVUMHydF-omfs6UmD1jViRKxnLdnEzok=s1000",
+      "dimensions": [
+        1000,
+        750
+      ],
+      "permalinkVerified": true
+    },
+    {
+      "name": "Tony Bergeron",
+      "rating": 5,
+      "excerpt": "Scheduling an appointment was super easy, and the window tinting turned out excellent. Fast, professional, and great quality work.",
+      "url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xkdmNrWmpaWEEwYkhJNVZHMU5Sblp4UTJsaVpsRRAB!2m1!1s0x0:0x11e26e5cfd874f9!3m1!1s2@1:CAIQACodChtycF9oOldvckZjZXA0bHI5VG1NRnZxQ2liZlE%7C%7C?hl=en-GB",
+      "asset": "assets/review-tony-bergeron.webp",
+      "photoOrdinal": 1,
+      "photoSource": "https://lh3.googleusercontent.com/grass-cs/AABkmLey25tokTZgD4w6UcQoGX23TnROy_I1AykYfZBA7Pkk1X5tCxSzfrNf3vz_7CF4gAd_TKij6LUIlpQML7Nk57OJ1yVyQGgcntoINVOlgFJSPps_9IFtz16f_zcSUcqeQ_coe9MNkXaudxQh=s1000",
+      "dimensions": [
+        1000,
+        750
+      ],
+      "permalinkVerified": true
+    },
+    {
+      "name": "Jamal Rose",
+      "rating": 5,
+      "excerpt": "Shout out to tamiami tint of Naples. He did a really good job tinting the windows.\nVery quick, efficient and looks high quality. Thank you.",
+      "url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xaT1JWWjVhM2hzY1Rsc2MwbFBWVWRNZEZselNYYxAB!2m1!1s0x0:0x11e26e5cfd874f9!3m1!1s2@1:CAIQACodChtycF9oOlZORVZ5a3hscTlsc0lPVUdMdFlzSXc%7C%7C?hl=en-GB",
+      "asset": "assets/review-jamal-rose.webp",
+      "photoOrdinal": 1,
+      "photoSource": "https://lh3.googleusercontent.com/grass-cs/AABkmLc-gk2eMUla6aZw2O5Gcn1WgjGE_NMdqTex1QbAbxLMqYeOdD85HS7qwaeFaCvD7jB8rSziLwWR8csDc4jyrxscNQj9Y3F5zMKN7vVistvVJPsOoOwY8Bx7d1ttdxt8vudRgfzj4aNdY5CQ=s1000",
+      "dimensions": [
+        1000,
+        459
+      ],
+      "permalinkVerified": true
+    },
+    {
+      "name": "Matthew Gagnon",
+      "rating": 5,
+      "excerpt": "He does a great job and my car looks and feels much better better. Easily the best tint in Naples.",
+      "url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pSNmVsRkRkWGxGVkdJM1RsTlFXSGhCZDJWa1NWRRAB!2m1!1s0x0:0x11e26e5cfd874f9!3m1!1s2@1:CAIQACodChtycF9oOjR6elFDdXlFVGI3TlNQWHhBd2VkSVE%7C%7C?hl=en-GB",
+      "asset": "assets/review-matthew-gagnon.webp",
+      "photoOrdinal": 1,
+      "photoSource": "https://lh3.googleusercontent.com/grass-cs/AABkmLfhN10bhWT7IqZaIYoS3IBKl0OdQIlTkuxRXPXTxr13PeAXWlUIGurkUU8W-H_zY2gJIF3O5hJybLFayhmMf8DM3ivduf0n3Mu88GdLQKspFeFHn3AwH9JbANM5zORFVwvEY8_iWmQmh6M=s1000",
+      "dimensions": [
+        1000,
+        750
+      ],
+      "permalinkVerified": true
+    }
+  ],
+  "previewOnly": false,
+  "preview": {
+    "url": "http://127.0.0.1:8128/",
+    "integration": "Current local source embeds the owner-supplied GHL form iRwQGhRVDcJCZrMJeXNm in both placements. No custom submission handler or parent tracking added. Never fill or submit it during layout verification.",
+    "verificationCommand": "node tamiami-tint/smoke-preview.mjs http://127.0.0.1:8128/ OWNED_ORCA_PAGE_ID",
+    "evidence": "evidence/ghl-form/",
+    "headerRevision": {
+      "change": "Full-width charcoal header, compact original logo, clearer navigation and orange telephone CTA. No other page sections changed.",
+      "evidence": "evidence/header-checks.json",
+      "requestedWidths": [1440, 1024, 768, 390, 320],
+      "observedWidths": [1440, 1024, 767, 389, 319],
+      "checks": "Full-width background, no horizontal overflow or logo/navigation/CTA overlap, 44px call target, DOM focus and navigation anchors. Fixed-width CSS proof, not native mobile or keyboard focus-visible proof."
+    },
+    "browser": "Orca embedded",
+    "viewportLimit": "Fixed-width same-origin iframe checks CSS responsiveness, not native mobile emulation. DOM keyboard events check handlers, not native keyboard delivery.",
+    "publication": "The initial preview-only version is published to getkoup/tamiami-tint. The real GHL integration is local and not yet deployed; the page remains noindex.",
+    "imageReuse": "Official and Google-review images published with the owner's authorization. Public visibility alone does not establish image reuse permission."
+  },
+  "deployment": {
+    "repository": "https://github.com/getkoup/tamiami-tint",
+    "url": "https://getkoup.github.io/tamiami-tint/",
+    "commit": "988f82a137a13effb8b49130d69973ba6d40c6bd",
+    "workflowRun": 37362475188,
+    "workflowConclusion": "success",
+    "pagesSource": {"branch": "main", "path": "/"},
+    "httpsEnforced": true,
+    "published": "index.html, page.css, site.js, assets/ and .nojekyll only",
+    "excluded": "sources.json, smoke-preview.mjs and evidence/",
+    "verificationEvidence": "evidence/deployment-pages/",
+    "integration": "Preview forms only; no CRM destination, tracking, custom domain or DNS changes."
+  },
+  "formIntegration": {
+    "id": "iRwQGhRVDcJCZrMJeXNm",
+    "name": "Tinting (Google) - 299",
+    "url": "https://api.leadconnectorhq.com/widget/form/iRwQGhRVDcJCZrMJeXNm",
+    "placements": ["hero", "lower quote"],
+    "reference": "Diamond's public GitHub iframe implementation; no integrations, dashboard data or success redirects copied",
+    "headers": "Original hero heading and description and lower form heading preserved",
+    "spacing": "Each iframe sits in a .ghl-crop wrapper; negative margins (-70px -42px -116px) crop the provider padding and dashed outline, and the card carries its own padding like Diamond. Crop values match the current GHL builder styling only; set form padding to 0 and remove its border in GHL, then delete the margins. Provider resizing preserved.",
+    "providerConfiguration": "Not changed; no dashboard accessed",
+    "evidence": "evidence/ghl-form/provider-spacing.json",
+    "deliveryVerification": "No form filled or submitted; CRM receipt and conversion attribution not verified",
+    "publication": "Pending provider-spacing resolution and actual rendered-form verification"
+  }
+}

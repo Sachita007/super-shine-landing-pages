@@ -1,0 +1,84 @@
+{
+  "measuredBefore": [
+    {
+      "selector": "HTML.",
+      "top": 0,
+      "bottom": 590.530517578125,
+      "padding": "0px",
+      "margin": "0px",
+      "height": "590.531px",
+      "minHeight": "0px"
+    },
+    {
+      "selector": "BODY.",
+      "top": 0,
+      "bottom": 590.530517578125,
+      "padding": "0px",
+      "margin": "0px",
+      "height": "590.531px",
+      "minHeight": "0px"
+    },
+    {
+      "selector": "SECTION#form-builder.hl_form-builder--main",
+      "top": 0,
+      "bottom": 590.530517578125,
+      "padding": "40px 20px",
+      "margin": "0px",
+      "height": "590.531px",
+      "minHeight": "0px"
+    },
+    {
+      "selector": "DIV.ghl-form-wrap",
+      "top": 39.98374938964844,
+      "bottom": 490.5540313720703,
+      "padding": "0px",
+      "margin": "0px 416.509px 60px 416.492px",
+      "height": "450.57px",
+      "minHeight": "0px"
+    },
+    {
+      "selector": "DIV#_builder-form.form-builder--wrap",
+      "top": 39.98374938964844,
+      "bottom": 490.5540313720703,
+      "padding": "0px 20px",
+      "margin": "0px",
+      "height": "450.57px",
+      "minHeight": "0px"
+    },
+    {
+      "selector": "DIV.flex-col row fields-container",
+      "top": 41.079193115234375,
+      "bottom": 489.4585876464844,
+      "padding": "30px 0px",
+      "margin": "0px",
+      "height": "448.379px",
+      "minHeight": "auto"
+    },
+    {
+      "selector": "BUTTON.btn btn-dark button-element",
+      "top": 398.4168395996094,
+      "bottom": 442.3886909484863,
+      "padding": "8px 16px",
+      "margin": "0px",
+      "height": "43.9719px",
+      "minHeight": "0px"
+    },
+    {
+      "selector": "DIV.flex-col row fields-container",
+      "top": 235.2810821533203,
+      "bottom": 295.25670623779297,
+      "padding": "30px 0px",
+      "margin": "0px",
+      "height": "59.9756px",
+      "minHeight": "0px"
+    }
+  ],
+  "targetedVerticalCSS": ".hl-app .hl_form-builder--main { padding-block: 0 !important; }\n.ghl-form-wrap { margin-block: 0 !important; }\n#_builder-form .form-side > .fields-container { padding-block: 0 !important; }",
+  "temporaryPublicFormProof": {
+    "beforeHeight": 590.5305,
+    "afterHeight": 390.5947,
+    "submitButtonBottom": 372.4171,
+    "providerConfigSaved": false
+  },
+  "scope": "Only outer vertical wrapper padding, outer form bottom margin and outer field-container vertical padding. Horizontal spacing, header, fields, validation and submit button preserved."
+}

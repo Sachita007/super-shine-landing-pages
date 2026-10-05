@@ -1,0 +1,140 @@
+{
+  "repository": "https://github.com/getkoup/tamiami-tint",
+  "url": "https://getkoup.github.io/tamiami-tint/",
+  "commit": "988f82a137a13effb8b49130d69973ba6d40c6bd",
+  "workflow": {
+    "id": 37362475188,
+    "url": "https://github.com/getkoup/tamiami-tint/actions/runs/37362475188",
+    "headSha": "988f82a137a13effb8b49130d69973ba6d40c6bd",
+    "conclusion": "success"
+  },
+  "pages": {
+    "url": "https://api.github.com/repos/getkoup/tamiami-tint/pages",
+    "status": "built",
+    "cname": null,
+    "custom_404": false,
+    "html_url": "https://getkoup.github.io/tamiami-tint/",
+    "build_type": "legacy",
+    "source": {
+      "branch": "main",
+      "path": "/"
+    },
+    "public": true,
+    "protected_domain_state": null,
+    "pending_domain_unverified_at": null,
+    "https_enforced": true
+  },
+  "approvedSource": "/home/sachita/orca/workspaces/LandingPage/Tamiami-landing-page/tamiami-tint",
+  "isolatedCheckout": "/tmp/tamiami-tint-pages-2bnatttz",
+  "liveByteParity": {
+    "index.html": {
+      "status": 200,
+      "sha256": "a087690a78dee8cf44d13853f67a727fbe07034566a8dfa428f2c8fd6161e64a",
+      "gitBlob": "113866865c53c4671c8a2f818055c26fb50fe229"
+    },
+    "page.css": {
+      "status": 200,
+      "sha256": "95374c2318171dc24e7383865cb165dea49e62cee3d5b167bad4057cf2090299",
+      "gitBlob": "ccf45afa155e7e9135fbe8acc47be52a0a47b43f"
+    },
+    "site.js": {
+      "status": 200,
+      "sha256": "9cfe465a1dffa85bbc478a3218cc3b7fe8c1811f170436ec5fb51ae5e39faacb",
+      "gitBlob": "f3ae0f3aca8c18001939f25c8d496b8dc7d6f9bf"
+    },
+    "assets/Manrope-OFL.txt": {
+      "status": 200,
+      "sha256": "58172e0c0fac2cda8a37b348164bb55e44b0e69051e557e92b1d3f6910141f7b",
+      "gitBlob": "e271172a9ed0cddc895aabb6509f1c7d880b492d"
+    },
+    "assets/logo.png": {
+      "status": 200,
+      "sha256": "9ccd400f811e9dfc882d3553b1a624b4f382af6fd1914ae30aa7739df1ac47ac",
+      "gitBlob": "cdedfdc9faf165b3a7e7c10ba9ac0a96cca28a2c"
+    },
+    "assets/manrope-latin.woff2": {
+      "status": 200,
+      "sha256": "a30ddcd349703aff7464c34bef3fffdff405ee50c113440d7c8693c02d210972",
+      "gitBlob": "71eb731d558046199aa7f985adbf812890a093a1"
+    },
+    "assets/review-alexandru-budeanu.webp": {
+      "status": 200,
+      "sha256": "0de8efd23116316e8106e35d88a8b0d635498a0892771b09f81df5e1fd50c75c",
+      "gitBlob": "2cdd5468c3f7ed9adc60d87f31538f50afd5e4aa"
+    },
+    "assets/review-dawna-gold.webp": {
+      "status": 200,
+      "sha256": "594ab48939c1befa32273a96c39f21d55d410a66c43edfaa2cfdb1f14ad45b9f",
+      "gitBlob": "cfe7eb6042278e147931ea081abdd22660b56e75"
+    },
+    "assets/review-jamal-rose.webp": {
+      "status": 200,
+      "sha256": "3981a9c65d976513ab5906a40894de833893bd9961515445c3d5e63c18138aae",
+      "gitBlob": "fde81faaf69711fb8c763b70531f6dd675b275af"
+    },
+    "assets/review-jeremy-rosario.webp": {
+      "status": 200,
+      "sha256": "9fb4e34f3aa31af2df8a1d03849aa20449a17ad150ab7b15469ae21222c61bab",
+      "gitBlob": "4618e870263473ceca0eca423f5c543b59419b4e"
+    },
+    "assets/review-matthew-gagnon.webp": {
+      "status": 200,
+      "sha256": "a8ea29743cfd1bd1c1fccb437baf74f20d124f0f2e9d61468f29bcd73bf894a1",
+      "gitBlob": "9e6a2888cb949520040fe0a7b6227447ea65d85f"
+    },
+    "assets/review-tony-bergeron.webp": {
+      "status": 200,
+      "sha256": "c6bfa3879bba1be9b845a6f5dd0b4f0020cb8c4061dbf271555ca27d0e3d4f1b",
+      "gitBlob": "8d18bb72bd3d9d8b11d3a2b3e4b656bdc0fc195e"
+    },
+    "assets/story-ferrari.webp": {
+      "status": 200,
+      "sha256": "bf8d2cd18860f3c6041a9b232dc06e486be79670fa9f5fe67b4c8e36f65cc65e",
+      "gitBlob": "d9ecf474b51d48d4ca44be6b9c19a9b3eebb8827"
+    },
+    "assets/tint-bentley.webp": {
+      "status": 200,
+      "sha256": "47bcd6570d3d7df165aace22f8cd6abfac0482534ca1f3fe82e299f09f27265a",
+      "gitBlob": "9bafe2bebb04e15f9a72199ed2ff858991f8a790"
+    },
+    "assets/tint-ferrari.webp": {
+      "status": 200,
+      "sha256": "db0e90329492d640e91edb5b90b5a7c60960e51473780d7739e55421b8be48b1",
+      "gitBlob": "5847eb78dcc5cba727b12c9ddc963cad7aa47897"
+    },
+    "assets/tint-range-rover.webp": {
+      "status": 200,
+      "sha256": "931558bf8bf210c513951d33e0cd6eadad9866f392d47508a2c96f16c5d9dd53",
+      "gitBlob": "eaedcae2d88a36674208fab525df2762ad8d8353"
+    },
+    "assets/tint-targa.webp": {
+      "status": 200,
+      "sha256": "6deb60f887cdbfe87bfcc4602f36a9444638a643934879d55d0a1163c053b3e1",
+      "gitBlob": "a79e0bd01ff0aa4c244d81596a4d10eda170f57d"
+    },
+    "assets/tint-taycan.webp": {
+      "status": 200,
+      "sha256": "523d77e562fe4235118e7c48053a979a4d39c4d2635534efbe8d309823b8dedb",
+      "gitBlob": "4290f68a1b6b13d538bb53e0724f90b3669b5183"
+    }
+  },
+  "excludedPublicPaths": {
+    "sources.json": 404,
+    "smoke-preview.mjs": 404,
+    "evidence/orca-checks.json": 404
+  },
+  "protectedRemoteSitesUnchanged": true,
+  "concurrentProtectedLocalChanges": {
+    "/home/sachita/orca/workspaces/LandingPage/1Taketint-landing-page/1taketints/index.html": {
+      "before": "81885c260e76f54bcdc5a23371934d58742d18be8842811b89814c4a40099263",
+      "after": "71bba2bcb45c7da37102df8d67fadfafe84e2bfd031e6c69b3c45d6ed50f7e86"
+    },
+    "/home/sachita/orca/workspaces/LandingPage/1Taketint-landing-page/1taketints/page.css": {
+      "before": "9a77d9855ce174945e49bccdb2045411397a29760a5b69b0c26c1ab1b4bc7cb1",
+      "after": "4cce747b21f255921ba1d136b00b1914540d7daef0d26640beaa13ba00f3ae7c"
+    }
+  },
+  "scope": "Only dedicated getkoup/tamiami-tint repository created and deployed. Other local files, repositories, domains, hosting and integrations not modified by this deployment.",
+  "formState": "Preview-only; no transmission, storage, CRM or tracking.",
+  "browserEvidence": "/home/sachita/orca/workspaces/LandingPage/Tamiami-landing-page/tamiami-tint/evidence/deployment-pages/orca-checks.json"
+}
