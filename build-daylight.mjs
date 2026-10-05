@@ -1,5 +1,7 @@
 // Run before publishing changes to index.html, shared.js, or variant-f.js.
 // Static iframe nodes start loading during HTML parsing and survive page initialization.
+// Vercel publishes dist/ and copies Daylight to index.html; GitHub Pages keeps the preview index.
+// Deploy: vercel deploy --prod --yes --project supershine-detailing --scope sachita007s-projects
 import { readFile, writeFile } from 'node:fs/promises';
 import vm from 'node:vm';
 

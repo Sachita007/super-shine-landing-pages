@@ -1,0 +1,158 @@
+/* Isolated 719 Auto Customs branding: blue, white, and charcoal from its official logo. */
+body.customs-page {
+  --bg: #fff;
+  --surface: #f0f6f8;
+  --text: #15232b;
+  --muted: #52636d;
+  --line: #d3e1e7;
+  --accent: #00789b;
+  --accent-ink: #00617e;
+  --on-accent: #fff;
+}
+body.customs-page .section { padding-block: 74px; }
+body.customs-page .site-header { height: 92px; }
+body.customs-page .brand img { width: 54px; height: 54px; border-radius: 9px; object-fit: contain; }
+body.customs-page .brand small { letter-spacing: .17em; }
+body.customs-page .button { min-height: 48px; }
+body.customs-page .button:hover { background: #005d79; }
+body.customs-page .daylight-hero { background: #edf6f8; }
+body.customs-page .daylight-backdrop { object-position: center 56%; }
+body.customs-page .daylight-hero::before { background: linear-gradient(90deg, #f7fcfdf5 0%, #f1f9fce8 37%, #e7f5f96e 70%, #edf6f833 100%); }
+body.customs-page .daylight-grid { gap: 60px; padding-block: 42px; }
+body.customs-page .daylight-card { border-color: #cbdde4; border-top: 3px solid var(--accent); padding: 18px; box-shadow: 0 15px 45px #092f3b1a; }
+body.customs-page .daylight-card > p { font-size: 12px; margin: 8px 0 0; }
+body.customs-page .daylight-card .button { width: 100%; gap: 12px; }
+body.customs-page .daylight-dark,
+body.customs-page .site-footer {
+  --bg: #0d1a22;
+  --surface: #162a35;
+  --text: #f4fafc;
+  --muted: #b5cbd5;
+  --line: #304b58;
+  --accent: #60d5f1;
+  --accent-ink: #60d5f1;
+  --on-accent: #082e3c;
+}
+body.customs-page .daylight-dark .button { background: #60d5f1; color: #082e3c; }
+body.customs-page .daylight-dark .button:hover { background: #9ce8f8; }
+body.customs-page .studio-trust { grid-template-columns: 1.1fr 1fr 1.15fr 1.1fr; }
+body.customs-page .studio-trust strong { font-size: 14px; }
+body.customs-page .studio-trust small a { text-decoration: underline; text-underline-offset: 3px; }
+body.customs-page .daylight-story { padding-top: 40px; }
+body.customs-page .studio-statement { grid-template-columns: .85fr 1.15fr; }
+/* The complete vehicle stays visible, including at intermediate desktop widths. */
+body.customs-page .studio-statement > img { height: auto; max-height: none; object-fit: contain; align-self: center; }
+body.customs-page .studio-statement > div { padding: 40px; }
+body.customs-page .studio-statement h2 { font-size: clamp(34px, 3.7vw, 48px); }
+body.customs-page .portfolio-grid img { height: auto; border-radius: 0; }
+body.customs-page .benefit { border-radius: 0; }
+.reviews-section { background: #eff7fa; border-block: 1px solid var(--line); }
+.review-summary { align-self: end; justify-self: end; }
+.review-summary > strong { display: block; font-size: 36px; font-weight: 700; letter-spacing: -.04em; }
+.review-summary .stars { font-size: 18px; letter-spacing: 1px; vertical-align: middle; }
+.review-summary > a { font-size: 12px; text-decoration: underline; text-underline-offset: 4px; }
+.reviews-toolbar { display: flex; justify-content: space-between; gap: 18px; margin-block: -12px 20px; }
+.reviews-toolbar p { font-size: 10px; }
+.reviews-toolbar > span { color: #00617e; font-size: 9px; font-weight: 800; letter-spacing: .12em; white-space: nowrap; }
+.review-track { display: flex; gap: 18px; overflow-x: auto; overscroll-behavior-x: contain; scroll-snap-type: x mandatory; padding: 3px 2px 20px; scrollbar-color: #00789b #d6e7ed; scrollbar-width: auto; }
+.review-track:focus-visible { outline: 3px solid #00789b; outline-offset: 5px; }
+.review-track::-webkit-scrollbar { height: 8px; }
+.review-track::-webkit-scrollbar-track { background: #d6e7ed; border-radius: 5px; }
+.review-track::-webkit-scrollbar-thumb { background: #00789b; border-radius: 5px; }
+.review-card { display: flex; flex-direction: column; flex: 0 0 calc((100% - 36px) / 3); min-width: 0; scroll-snap-align: start; padding: 25px; border: 1px solid #d3e1e7; background: #fff; }
+.review-top { display: flex; justify-content: space-between; align-items: center; gap: 10px; margin-bottom: 6px; }
+.vehicle-tag { padding: 5px 8px; background: #edf8fb; color: #00617e; font-size: 9px; font-weight: 800; letter-spacing: .08em; }
+body.customs-page .review-card .google-letter { color: #00789b; font-size: 24px; line-height: 1; }
+.review-card > .stars { font-size: 13px; letter-spacing: 2px; margin-bottom: 16px; }
+.review-card blockquote { margin: 0 0 24px; font-size: 13px; line-height: 1.9; color: #263c47; }
+.review-author { display: flex; align-items: center; gap: 11px; margin-top: auto; }
+.avatar { display: grid; place-items: center; flex: 0 0 35px; height: 35px; background: #e8f5fa; color: #00617e; border-radius: 50%; font-weight: 700; font-size: 11px; }
+.review-author strong { font-size: 11px; }
+.review-author small { display: block; color: #596c78; font-size: 9px; }
+.review-source { font-size: 9px; color: #00617e; text-decoration: underline; text-underline-offset: 3px; margin-top: 18px; }
+body.customs-page .quote-layout { gap: 60px; padding: 44px; border-radius: 0; }
+body.customs-page .ghl-quote { padding: 18px; border: 1px solid #cbdde4; border-top: 3px solid #00789b; }
+body.customs-page .ghl-form-frame { min-height: 560px; border-radius: 4px; }
+body.customs-page .faq-list p a { text-decoration: underline; text-underline-offset: 3px; }
+body.customs-page .site-footer { padding-bottom: 35px; }
+@media (max-width: 1100px) {
+  body.customs-page .daylight-grid { gap: 30px; }
+  body.customs-page .desktop-nav { gap: 20px; }
+  body.customs-page .studio-trust > div { padding-left: 16px; }
+  body.customs-page .studio-trust > div:first-child { padding-left: 0; }
+  body.customs-page .studio-trust strong { font-size: 12px; }
+  body.customs-page .quote-layout { gap: 35px; padding: 30px; }
+  body.customs-page .studio-statement > div { padding: 28px; }
+}
+@media (max-width: 850px) and (min-width: 761px) {
+  body.customs-page .desktop-nav { gap: 12px; font-size: 10px; }
+  body.customs-page .site-header { gap: 16px; }
+  body.customs-page .brand > span { font-size: 14px; }
+}
+@media (max-width: 760px) {
+  body.customs-page .container { padding-inline: 20px; }
+  body.customs-page .section { padding-block: 54px; }
+  body.customs-page .site-header { height: 80px; gap: 12px; }
+  body.customs-page .brand img { width: 42px; height: 42px; }
+  body.customs-page .brand > span { font-size: 12px; }
+  body.customs-page .brand small { font-size: 6px; letter-spacing: .11em; }
+  body.customs-page .phone-symbol { display: none; }
+  body.customs-page .header-call { font-size: 11px; }
+  body.customs-page .daylight-grid { gap: 26px; padding-block: 30px; }
+  body.customs-page .daylight-backdrop { height: 365px; object-position: center 60%; }
+  body.customs-page .daylight-hero::before { background: linear-gradient(90deg, #f7fcfdf2 0%, #f1f9fcd6 55%, #e7f5f999 100%); }
+  body.customs-page .daylight-card h2 { font-size: 26px; }
+  body.customs-page .studio-trust { grid-template-columns: 1fr 1fr; }
+  body.customs-page .studio-trust > div:nth-child(3) { padding-left: 0; }
+  body.customs-page .studio-statement { grid-template-columns: 1fr; }
+  body.customs-page .studio-statement > img { width: 100%; max-height: 500px; }
+  body.customs-page .studio-statement > div { padding: 30px 24px; }
+  body.customs-page .studio-statement h2 { font-size: 39px; }
+  .review-summary { margin-top: 24px; }
+  .review-summary > strong { font-size: 30px; }
+  .reviews-toolbar { margin-top: 0; }
+  .reviews-toolbar > span { display: none; }
+  .review-card { flex-basis: 86%; padding: 22px; }
+  body.customs-page .quote-layout { padding: 26px 20px; gap: 30px; }
+}
+@media (max-width: 380px) {
+  body.customs-page .container { padding-inline: 16px; }
+  body.customs-page .site-header { gap: 8px; }
+  body.customs-page .brand { gap: 7px; }
+  body.customs-page .brand img { width: 37px; height: 37px; }
+  body.customs-page .brand > span { font-size: 11px; }
+  body.customs-page .header-call { font-size: 10px; }
+  body.customs-page .quote-layout { padding: 24px 14px; }
+  .review-card { flex-basis: 94%; padding: 20px; }
+}
+
+/* One-shot entrances and restrained hover feedback; no carousel auto-play. */
+@keyframes customs-reveal {
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: none; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .daylight-copy > *, .motion-reveal { animation: customs-reveal 550ms cubic-bezier(.2, .7, .2, 1) both; }
+  .daylight-copy > :nth-child(2), .motion-reveal:nth-child(2) { animation-delay: 60ms; }
+  .daylight-copy > :nth-child(3), .motion-reveal:nth-child(3) { animation-delay: 120ms; }
+  .daylight-copy > :nth-child(n+4), .motion-reveal:nth-child(n+4) { animation-delay: 180ms; }
+  body.customs-page .button { transition: background-color 180ms, box-shadow 180ms, translate 180ms; }
+  .button > span, .text-link > span { display: inline-block; transition: translate 180ms; }
+  .portfolio-grid img { transition: filter 250ms; }
+}
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  body.customs-page .button:hover { translate: 0 -2px; box-shadow: 0 7px 18px #005d7926; }
+  .button:hover > span, .text-link:hover > span { translate: 2px -2px; }
+  .portfolio-grid figure:hover img { filter: brightness(1.06); }
+}
+
+body.customs-page .brand img { width: 74px; height: 54px; border-radius: 0; }
+body.customs-page .ghl-form-frame[data-iframe-resizer-initialized="true"] { min-height: 0; }
+body.customs-page .daylight-copy h1 { font-size: clamp(36px, 4.1vw, 58px); }
+@media (max-width: 760px) {
+  body.customs-page .brand img { width: 50px; height: 37px; }
+  body.customs-page .daylight-copy h1 { font-size: clamp(30px, 8.5vw, 43px); }
+}
+@media (prefers-reduced-motion: reduce) {
+  body.customs-page .button:hover { transform: none; filter: none; }
+}
