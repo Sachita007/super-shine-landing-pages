@@ -119,7 +119,7 @@ document.addEventListener('submit', event => {
   const form = event.target;
   const status = form.querySelector('.form-status');
   const data = new FormData(form);
-  status.textContent = `Preview ready for ${data.get('vehicle').trim()}. This request has not been sent. Call (775) 220-7064 or use the live website to claim the $599 offer.`;
+  status.textContent = `Preview ready for ${data.get('vehicle').trim()}. This request has not been sent. Call (855) 941-1950 or use the live website to claim the $599 offer.`;
   status.hidden = false;
   status.focus();
 });

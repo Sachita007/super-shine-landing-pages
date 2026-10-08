@@ -27,7 +27,7 @@ window.VariantE = () => `
         <div><strong>4.9 <span aria-hidden="true">★</span></strong><span>Google rating</span></div>
         <div><strong>100+</strong><span>Satisfied customers</span></div>
         <div><strong>Up to 10 years</strong><span>Warranty · ask for terms</span></div>
-        <a href="tel:+17752207064"><span>LET’S TALK ABOUT YOUR CAR</span><strong>(775) 220-7064 ↗</strong></a>
+        <a href="tel:+18559411950"><span>LET’S TALK ABOUT YOUR CAR</span><strong>(855) 941-1950 ↗</strong></a>
       </div>
     </section>
     ${window.UI.benefits()}
