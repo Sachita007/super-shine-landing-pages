@@ -8,9 +8,9 @@ window.VariantD = () => `${UI.header()}
         <span class="eyebrow">LIMITED-TIME OFFER <span aria-hidden="true">/</span> STOCKTON, CA</span>
         <h1 id="noir-title">10-year premium<br>ceramic coating.</h1>
         <p>Deep gloss. Everyday protection.<br>A finish you'll love, at a price you will too.</p>
-        <div class="noir-price"><strong>$599</strong><div><span>Normally <s>$1,200</s></span><small>YOU SAVE $601</small></div></div>
+        <div class="noir-price"><strong>$499</strong><div><span>Normally <s>$1,200</s></span><small>YOU SAVE $701</small></div></div>
         <div class="noir-warranty"><span aria-hidden="true">✓</span><strong>Up to a 10-year warranty</strong><span class="noir-warranty-divider" aria-hidden="true">/</span><span>Multi-certified specialists</span></div>
-        <div class="noir-offer-action">${UI.button('Claim my $599 ceramic coating')}<small>Free quote. No pressure. Confirm eligibility & warranty terms with the shop.</small></div>
+        <div class="noir-offer-action">${UI.button('Claim my $499 ceramic coating')}<small>Free quote. No pressure. Confirm eligibility & warranty terms with the shop.</small></div>
       </div>
       <div class="noir-frame-note"><span>THE SUPER SHINE FINISH</span><a href="#portfolio">See our work ↗</a></div>
     </div>

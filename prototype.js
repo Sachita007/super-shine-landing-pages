@@ -7,9 +7,9 @@ function VariantA() {
       <div class="studio-copy">
         <div class="hero-location"><span class="status-dot"></span> LIMITED-TIME OFFER · STOCKTON, CA</div>
         <h1>10-year premium<br><em>ceramic coating.</em></h1>
-        <div class="studio-offer"><strong>$599</strong><div><s>Normally $1,200</s><span class="offer-save">SAVE $601</span></div></div>
+        <div class="studio-offer"><strong>$499</strong><div><s>Normally $1,200</s><span class="offer-save">SAVE $701</span></div></div>
         <p>Exceptional gloss. Everyday protection. Premium ceramic coating with up to a 10-year warranty.</p>
-        <div class="hero-buttons">${button('Claim my $599 offer')}<a class="text-link" href="#portfolio">See the finish ↗</a></div>
+        <div class="hero-buttons">${button('Claim my $499 offer')}<a class="text-link" href="#portfolio">See the finish ↗</a></div>
         <div class="hero-assurance"><span>Free, no-pressure quote</span><span>Up to 10-year warranty</span></div>
       </div>
       <div class="studio-visual">
@@ -119,7 +119,7 @@ document.addEventListener('submit', event => {
   const form = event.target;
   const status = form.querySelector('.form-status');
   const data = new FormData(form);
-  status.textContent = `Preview ready for ${data.get('vehicle').trim()}. This request has not been sent. Call (855) 941-1950 or use the live website to claim the $599 offer.`;
+  status.textContent = `Preview ready for ${data.get('vehicle').trim()}. This request has not been sent. Call (855) 941-1950 or use the live website to claim the $499 offer.`;
   status.hidden = false;
   status.focus();
 });

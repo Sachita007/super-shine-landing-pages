@@ -10,10 +10,10 @@ window.VariantC = () => {
         <div class="c-offer">
           <div class="c-offer-top"><span>Limited-time offer</span><span aria-hidden="true">↗</span></div>
           <h1 id="c-hero-title">10-year premium<br>ceramic coating.</h1>
-          <div class="c-price"><span class="c-currency">$</span>599</div>
-          <p class="c-normal">Normally <s>$1,200</s> <strong>Save $601</strong></p>
+          <div class="c-price"><span class="c-currency">$</span>499</div>
+          <p class="c-normal">Normally <s>$1,200</s> <strong>Save $701</strong></p>
           <div class="c-warranty"><span class="c-warranty-number">10</span><span>Up to 10-year<br><strong>warranty & durability</strong></span></div>
-          ${button('Claim my $599 ceramic coating')}
+          ${button('Claim my $499 ceramic coating')}
           <p class="c-offer-note">Ask our team about care and warranty details.</p>
         </div>
         <figure class="c-hero-photo"><img src="assets/charger.webp" alt="Turquoise Dodge Charger detailed by Super Shine Auto Detailing" fetchpriority="high"><figcaption><span>Super Shine Auto Detailing</span><span>Built for the spotlight. ↗</span></figcaption></figure>

@@ -11,8 +11,8 @@ window.VariantB = () => {
           <p class="eyebrow">A limited-time invitation</p>
           <h1 id="b-hero-title">Premium 10-year<br><em>ceramic coating.</em></h1>
           <div class="b-hero-offer">
-            <div class="b-price"><strong>$599</strong><div><span>Normally <s>$1,200</s></span><span class="b-saving">Save $601</span></div></div>
-            ${button('Claim the $599 offer', '#quote')}
+            <div class="b-price"><strong>$499</strong><div><span>Normally <s>$1,200</s></span><span class="b-saving">Save $701</span></div></div>
+            ${button('Claim the $499 offer', '#quote')}
             <p class="b-hero-warranty">Up to 10-year warranty available. Ask about coverage and care requirements.</p>
           </div>
           <p class="b-hero-description">For the love of your car. Richer gloss, effortless upkeep, and that just-detailed feeling, made to last.</p>
