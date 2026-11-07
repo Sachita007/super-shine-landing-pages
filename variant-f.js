@@ -43,5 +43,5 @@ window.VariantF = () => {
     ${portfolio()}
     <div class="daylight-dark">${quote().replace(/<form class="quote-form">[\s\S]*?<\/form>/, `<div class="ghl-quote">${form(1)}</div>`)}</div>
     ${faq()}
-  </main>${footer().replace('Independent design prototype · Not a live booking page', 'Free quotes · Super Shine Auto Detailing')}`;
+  </main>${footer().replace('Independent design prototype · Not a live booking page', '<a href="privacy.html">Privacy Policy</a> · Free quotes · Super Shine Auto Detailing')}`;
 };
