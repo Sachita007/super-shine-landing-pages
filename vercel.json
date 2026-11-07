@@ -2,5 +2,11 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "framework": null,
   "buildCommand": "node build-daylight.mjs && mkdir -p dist && cp *.html *.css *.js dist/ && cp daylight.html dist/index.html && cp -R assets dist/",
-  "outputDirectory": "dist"
+  "outputDirectory": "dist",
+  "rewrites": [
+    {
+      "source": "/privacy",
+      "destination": "/privacy.html"
+    }
+  ]
 }
