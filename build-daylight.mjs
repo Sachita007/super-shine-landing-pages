@@ -1,5 +1,7 @@
 // Run before publishing changes to index.html, shared.js, or variant-f.js.
 // Static iframe nodes start loading during HTML parsing and survive page initialization.
+// Vercel publishes dist/ and copies Daylight to index.html; GitHub Pages keeps the preview index.
+// Deploy: vercel deploy --prod --yes --project supershine-detailing --scope sachita007s-projects
 import { readFile, writeFile } from 'node:fs/promises';
 import vm from 'node:vm';
 
@@ -19,6 +21,6 @@ const html = (await readFile(new URL('index.html', import.meta.url), 'utf8'))
   .replace('  <script src="shared.js',
     '  <script id="ghl-form-embed" src="https://link.msgsndr.com/js/form_embed.js" async></script>\n  <script src="shared.js')
   .replace(/<noscript>[\s\S]*?<\/noscript>/,
-    '<noscript>To request a quote, enable JavaScript or call <a href="tel:+17752207064">(775) 220-7064</a>.</noscript>');
+    '<noscript>To request a quote, enable JavaScript or call <a href="tel:+18559411950">(855) 941-1950</a>.</noscript>');
 await writeFile(new URL('daylight.html', import.meta.url), html);
 console.log('Built daylight.html with parser-loaded GHL forms.');

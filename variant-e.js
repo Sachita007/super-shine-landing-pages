@@ -8,9 +8,9 @@ window.VariantE = () => `
         <div class="signature-ticket">
           <span class="signature-ticket-label">LIMITED-TIME SUPER SHINE OFFER</span>
           <h1 id="signature-title">Premium 10-year<br>ceramic coating.</h1>
-          <div class="signature-price"><strong>$599</strong><span>Normally <s>$1,200</s></span></div>
-          <span class="signature-saving">SAVE $601</span>
-          ${window.UI.button('Claim the $599 offer', '#quote')}
+          <div class="signature-price"><strong>$499</strong><span>Normally <s>$1,200</s></span></div>
+          <span class="signature-saving">SAVE $701</span>
+          ${window.UI.button('Claim the $499 offer', '#quote')}
           <p>Up to a 10-year warranty.<br> Ask us about eligibility and care.</p>
         </div>
         <div class="signature-intro">
@@ -27,7 +27,7 @@ window.VariantE = () => `
         <div><strong>4.9 <span aria-hidden="true">★</span></strong><span>Google rating</span></div>
         <div><strong>100+</strong><span>Satisfied customers</span></div>
         <div><strong>Up to 10 years</strong><span>Warranty · ask for terms</span></div>
-        <a href="tel:+17752207064"><span>LET’S TALK ABOUT YOUR CAR</span><strong>(775) 220-7064 ↗</strong></a>
+        <a href="tel:+18559411950"><span>LET’S TALK ABOUT YOUR CAR</span><strong>(855) 941-1950 ↗</strong></a>
       </div>
     </section>
     ${window.UI.benefits()}
